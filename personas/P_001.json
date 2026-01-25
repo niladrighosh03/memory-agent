@@ -1,0 +1,36 @@
+{
+  "persona_id": "P_001",
+  "driving_usage_profile": {
+    "commute_distance_km": 12,
+    "driving_environment": "city",
+    "daily_parking": "private_garage",
+    "business_use": false,
+    "annual_mileage_band": "0-5k",
+    "primary_drivers": [
+      {
+        "role": "self",
+        "age": 45
+      }
+    ]
+  },
+  "customer_segment_profile": {
+    "price_sensitivity": "medium",
+    "buyer_type": "first_time",
+    "switching_reason": null,
+    "claims_trauma": false
+  },
+  "service_preferences": {
+    "communication_style": "detailed",
+    "decision_style": "multiple_options",
+    "information_format": "plain_language",
+    "preferred_channel": "email"
+  },
+  "product_preferences": {
+    "coverage_goal": "maximum",
+    "deductible_appetite": "low",
+    "valued_addons": [
+      "green_discount",
+      "electric_vehicle_coverage"
+    ]
+  }
+}

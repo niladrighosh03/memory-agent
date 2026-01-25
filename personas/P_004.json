@@ -1,0 +1,40 @@
+{
+  "persona_id": "P_004",
+  "driving_usage_profile": {
+    "commute_distance_km": 12,
+    "driving_environment": "suburbs",
+    "daily_parking": "private_garage",
+    "business_use": false,
+    "annual_mileage_band": "0-5k",
+    "primary_drivers": [
+      {
+        "role": "husband",
+        "age": 75
+      },
+      {
+        "role": "wife",
+        "age": 72
+      }
+    ]
+  },
+  "customer_segment_profile": {
+    "price_sensitivity": "medium",
+    "buyer_type": "first_time",
+    "switching_reason": null,
+    "claims_trauma": false
+  },
+  "service_preferences": {
+    "communication_style": "detailed",
+    "decision_style": "multiple_options",
+    "information_format": "plain_language",
+    "preferred_channel": "call"
+  },
+  "product_preferences": {
+    "coverage_goal": "minimum",
+    "deductible_appetite": "low",
+    "valued_addons": [
+      "emergency_assistance",
+      "personal_belongings_cover"
+    ]
+  }
+}
