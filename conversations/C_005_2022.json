@@ -1,0 +1,59 @@
+{
+  "conversation_id": "C_005_2022",
+  "turns": [
+    {
+      "speaker": "user",
+      "utterance": "Hello, I've recently received some insurance quotes and I'm not sure which one to choose."
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Hi there! I'd be happy to help you understand the differences between the quotes and what might be best for your situation.",
+      "persuasion_strategy": "logical"
+    },
+    {
+      "speaker": "user",
+      "utterance": "My main concern is getting the maximum coverage for my needs."
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Great! Based on your desired maximum coverage and given your highway driving, I recommend considering plans with comprehensive coverage and a high liability limit.",
+      "persuasion_strategy": "logical"
+    },
+    {
+      "speaker": "user",
+      "utterance": "That makes sense, but I also want to keep the cost as low as possible."
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Understood. Let's look at plans that strike a balance between cost and coverage. Based on your price sensitivity and your profile, we have options with additional discounts for your private garage parking.",
+      "persuasion_strategy": "personalization"
+    },
+    {
+      "speaker": "user",
+      "utterance": "I've heard about some insurance plans offering new car replacement. Is that something you recommend?"
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Absolutely! Given your preference for maximum coverage and the fact that you value new car replacement, I'd recommend looking into plans that include this add-on.",
+      "persuasion_strategy": "personalization"
+    },
+    {
+      "speaker": "user",
+      "utterance": "Also, I'd like to know about any added benefits for personal accident coverage."
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Personal accident coverage is an excellent choice, especially since you're a first-time buyer. It can provide peace of mind knowing that you and your passengers are financially protected in case of an accident.",
+      "persuasion_strategy": "emotional"
+    },
+    {
+      "speaker": "user",
+      "utterance": "Okay, I think I'd like to go with that plan. How often should I review my insurance?"
+    },
+    {
+      "speaker": "agent",
+      "utterance": "A lot can change in a year, so it's a good idea to review your insurance annually. I'd be happy to help you with that process and make any necessary adjustments.",
+      "persuasion_strategy": "credibility"
+    }
+  ]
+}

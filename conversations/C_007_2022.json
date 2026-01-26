@@ -1,0 +1,59 @@
+{
+  "conversation_id": "C_007_2022",
+  "turns": [
+    {
+      "speaker": "user",
+      "utterance": "I'm a new driver, and I want to make sure I have the right coverage."
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Great question! Given your low price sensitivity and preference for detailed information, let's explore options that meet your minimum coverage goal yet still offer valuable add-ons.",
+      "persuasion_strategy": "personalization"
+    },
+    {
+      "speaker": "user",
+      "utterance": "What are some popular add-ons for business use?"
+    },
+    {
+      "speaker": "agent",
+      "utterance": "One of the most valued add-ons for business drivers is rental car coverage. It ensures you'll have a replacement vehicle if your car is being repaired due to a covered accident.",
+      "persuasion_strategy": "social_proof"
+    },
+    {
+      "speaker": "user",
+      "utterance": "That's helpful, but I'm concerned about my budget."
+    },
+    {
+      "speaker": "agent",
+      "utterance": "I hear you. Let me suggest an affordable plan with rental car coverage tailored to your driving profile and business use.",
+      "persuasion_strategy": "personalization"
+    },
+    {
+      "speaker": "user",
+      "utterance": "What about accident forgiveness?"
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Accident forgiveness is a popular choice for first-time buyers like yourself. It ensures your rates won't increase after an at-fault accident, providing peace of mind.",
+      "persuasion_strategy": "emotional"
+    },
+    {
+      "speaker": "user",
+      "utterance": "I'd also like personal belongings coverage."
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Personal belongings coverage is a must-have for drivers, especially those like you who spend time on the highway. It protects your valuables in case they're stolen from your vehicle.",
+      "persuasion_strategy": "logical"
+    },
+    {
+      "speaker": "user",
+      "utterance": "How can I get more details about these plans?"
+    },
+    {
+      "speaker": "agent",
+      "utterance": "I'll be happy to provide you with detailed information and multiple options via email as per your preference.",
+      "persuasion_strategy": "personalization"
+    }
+  ]
+}

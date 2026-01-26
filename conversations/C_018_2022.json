@@ -1,0 +1,59 @@
+{
+  "conversation_id": "C_018_2022",
+  "turns": [
+    {
+      "speaker": "user",
+      "utterance": "I'm new to buying car insurance and want to make sure I'm getting the best deal."
+    },
+    {
+      "speaker": "agent",
+      "utterance": "As a first-time buyer, it's great that you're considering your options carefully. Let's discuss plans that cater to your driving profile and price sensitivity.",
+      "persuasion_strategy": "personalization"
+    },
+    {
+      "speaker": "user",
+      "utterance": "I don't drive far - just 12 km a day in the city. How does that affect my insurance?"
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Your city driving and low annual mileage align well with plans that offer discounts for reduced risk. Let's explore those options.",
+      "persuasion_strategy": "logical"
+    },
+    {
+      "speaker": "user",
+      "utterance": "I want to keep my costs low."
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Understood. Based on your driving usage and price sensitivity, I suggest evaluating plans with lower premiums and essential coverage.",
+      "persuasion_strategy": "logical"
+    },
+    {
+      "speaker": "user",
+      "utterance": "What about add-ons? Are they worth it?"
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Add-ons can provide valuable benefits tailored to your situation. Based on your preferences, green discount and electric vehicle coverage may be worth considering.",
+      "persuasion_strategy": "personalization"
+    },
+    {
+      "speaker": "user",
+      "utterance": "How do I know which plan is best?"
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Throughout our conversation, we'll compare plans based on your preferences, driving profile, and budget. I'll make sure to provide detailed information and multiple options for you to make an informed decision.",
+      "persuasion_strategy": "personalization"
+    },
+    {
+      "speaker": "user",
+      "utterance": "I prefer email communication."
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Noted. I'll ensure all information and recommendations are sent to your preferred email address.",
+      "persuasion_strategy": "personalization"
+    }
+  ]
+}

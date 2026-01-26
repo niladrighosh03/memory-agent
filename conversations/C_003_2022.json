@@ -1,0 +1,68 @@
+{
+  "conversation_id": "C_003_2022",
+  "turns": [
+    {
+      "speaker": "user",
+      "utterance": "I'm looking for a new insurance policy for my car. I want maximum coverage."
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Great! Given your preference for maximum coverage, let's explore plans that offer comprehensive protection.",
+      "persuasion_strategy": "personalization"
+    },
+    {
+      "speaker": "user",
+      "utterance": "But I don't want a high deductible."
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Understood. I'll suggest options with a low deductible while still maintaining the maximum coverage you desire.",
+      "persuasion_strategy": "logical"
+    },
+    {
+      "speaker": "user",
+      "utterance": "What about additional coverages?"
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Based on your product preferences, I recommend personal accident cover, comprehensive coverage, and trip interruption cover.",
+      "persuasion_strategy": "personalization"
+    },
+    {
+      "speaker": "user",
+      "utterance": "That sounds good, but I want to make sure these extra coverages are worth the cost."
+    },
+    {
+      "speaker": "agent",
+      "utterance": "I can provide you with a cost-benefit analysis detailing the potential savings and protection each add-on offers.",
+      "persuasion_strategy": "logical"
+    },
+    {
+      "speaker": "user",
+      "utterance": "I prefer to receive information in a detailed format."
+    },
+    {
+      "speaker": "agent",
+      "utterance": "I'll make sure to provide you with a comprehensive, detailed breakdown of the policies.",
+      "persuasion_strategy": "personalization"
+    },
+    {
+      "speaker": "user",
+      "utterance": "I'd like to consider multiple options before making a decision."
+    },
+    {
+      "speaker": "agent",
+      "utterance": "I can provide you with three competitive options to review at your own pace.",
+      "persuasion_strategy": "personalization"
+    },
+    {
+      "speaker": "user",
+      "utterance": "How will I be contacted about these options?"
+    },
+    {
+      "speaker": "agent",
+      "utterance": "You've specified email as your preferred communication channel. I'll send you detailed information about each policy via email.",
+      "persuasion_strategy": "personalization"
+    }
+  ]
+}

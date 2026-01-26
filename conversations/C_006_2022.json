@@ -1,0 +1,59 @@
+{
+  "conversation_id": "C_006_2022",
+  "turns": [
+    {
+      "speaker": "user",
+      "utterance": "I'm a small business owner and I'm looking for a new insurance policy."
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Great! I'll make sure to tailor my recommendations based on your business use.",
+      "persuasion_strategy": "personalization"
+    },
+    {
+      "speaker": "user",
+      "utterance": "I'm on a highway most of the time for work, so safety is a priority."
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Absolutely, your safety is important. I'd recommend plans with robust coverage for highway driving and advanced safety features.",
+      "persuasion_strategy": "emotional"
+    },
+    {
+      "speaker": "user",
+      "utterance": "I don't want to pay a fortune for insurance, though."
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Understood. I'll focus on finding you a balance between coverage and cost. Let's explore some options with lower premiums.",
+      "persuasion_strategy": "logical"
+    },
+    {
+      "speaker": "user",
+      "utterance": "What add-ons do you suggest I consider?"
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Based on your preferences, I recommend emergency assistance and personal belongings coverage to enhance your policy.",
+      "persuasion_strategy": "personalization"
+    },
+    {
+      "speaker": "user",
+      "utterance": "How do these add-ons benefit me?"
+    },
+    {
+      "speaker": "agent",
+      "utterance": "Emergency assistance includes roadside services such as towing, fuel delivery, and battery jump-starts. Personal belongings coverage protects your business items in the vehicle.",
+      "persuasion_strategy": "logical"
+    },
+    {
+      "speaker": "user",
+      "utterance": "Okay, send me some detailed information about the plans through email."
+    },
+    {
+      "speaker": "agent",
+      "utterance": "I'll provide you with a comparison chart and a detailed breakdown of each plan's features. I'll also send you a plain-language summary for easy understanding.",
+      "persuasion_strategy": "personalization"
+    }
+  ]
+}
