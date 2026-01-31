@@ -1,0 +1,376 @@
+[
+  {
+    "persona_id": "P_004",
+    "driving_usage_profile": {
+      "commute_distance_km": 12,
+      "driving_environment": "suburbs",
+      "daily_parking": "private_garage",
+      "business_use": false,
+      "annual_mileage_band": "0-5k",
+      "primary_drivers": [
+        {
+          "role": "husband",
+          "age": 75
+        },
+        {
+          "role": "wife",
+          "age": 72
+        }
+      ]
+    },
+    "customer_segment_profile": {
+      "price_sensitivity": "medium",
+      "buyer_type": "first_time",
+      "switching_reason": null,
+      "claims_trauma": false
+    },
+    "service_preferences": {
+      "communication_style": "detailed",
+      "decision_style": "multiple_options",
+      "information_format": "plain_language",
+      "preferred_channel": "call"
+    },
+    "product_preferences": {
+      "coverage_goal": "minimum",
+      "deductible_appetite": "low",
+      "valued_addons": [
+        "emergency_assistance",
+        "personal_belongings_cover"
+      ]
+    }
+  },
+  {
+    "persona_id": "P_007",
+    "driving_usage_profile": {
+      "commute_distance_km": 45,
+      "driving_environment": "highway",
+      "daily_parking": "private_garage",
+      "business_use": true,
+      "annual_mileage_band": "20k+",
+      "primary_drivers": [
+        {
+          "role": "self",
+          "age": 27
+        }
+      ]
+    },
+    "customer_segment_profile": {
+      "price_sensitivity": "low",
+      "buyer_type": "first_time",
+      "switching_reason": null,
+      "claims_trauma": false
+    },
+    "service_preferences": {
+      "communication_style": "detailed",
+      "decision_style": "multiple_options",
+      "information_format": "plain_language",
+      "preferred_channel": "email"
+    },
+    "product_preferences": {
+      "coverage_goal": "minimum",
+      "deductible_appetite": "low",
+      "valued_addons": [
+        "accident_forgiveness",
+        "rental_car_coverage",
+        "personal_belongings"
+      ]
+    }
+  },
+  {
+    "persona_id": "P_003",
+    "driving_usage_profile": {
+      "commute_distance_km": 12,
+      "driving_environment": "highway",
+      "daily_parking": "private_garage",
+      "business_use": false,
+      "annual_mileage_band": "20k+",
+      "primary_drivers": [
+        {
+          "role": "self",
+          "age": 28
+        }
+      ]
+    },
+    "customer_segment_profile": {
+      "price_sensitivity": "low",
+      "buyer_type": "first_time",
+      "switching_reason": null,
+      "claims_trauma": false
+    },
+    "service_preferences": {
+      "communication_style": "detailed",
+      "decision_style": "multiple_options",
+      "information_format": "plain_language",
+      "preferred_channel": "email"
+    },
+    "product_preferences": {
+      "coverage_goal": "maximum",
+      "deductible_appetite": "low",
+      "valued_addons": [
+        "personal_accident_cover",
+        "comprehensive_coverage",
+        "trip_interruption_cover"
+      ]
+    }
+  },
+  {
+    "persona_id": "P_002",
+    "driving_usage_profile": {
+      "commute_distance_km": 12,
+      "driving_environment": "suburban",
+      "daily_parking": "private_garage",
+      "business_use": false,
+      "annual_mileage_band": "0-5k",
+      "primary_drivers": [
+        {
+          "role": "mother",
+          "age": 38
+        },
+        {
+          "role": "father",
+          "age": 42
+        }
+      ]
+    },
+    "customer_segment_profile": {
+      "price_sensitivity": "medium",
+      "buyer_type": "first_time",
+      "switching_reason": null,
+      "claims_trauma": false
+    },
+    "service_preferences": {
+      "communication_style": "detailed",
+      "decision_style": "multiple_options",
+      "information_format": "plain_language",
+      "preferred_channel": "call"
+    },
+    "product_preferences": {
+      "coverage_goal": "minimum",
+      "deductible_appetite": "low",
+      "valued_addons": [
+        "personal_accident_cover",
+        "third_party_liability"
+      ]
+    }
+  },
+  {
+    "persona_id": "P_006",
+    "driving_usage_profile": {
+      "commute_distance_km": 45,
+      "driving_environment": "highway",
+      "daily_parking": "private_garage",
+      "business_use": true,
+      "annual_mileage_band": "20k+",
+      "primary_drivers": [
+        {
+          "role": "self",
+          "age": 27
+        },
+        {
+          "role": "business_partner",
+          "age": 35
+        }
+      ]
+    },
+    "customer_segment_profile": {
+      "price_sensitivity": "low",
+      "buyer_type": "first_time",
+      "switching_reason": null,
+      "claims_trauma": false
+    },
+    "service_preferences": {
+      "communication_style": "detailed",
+      "decision_style": "multiple_options",
+      "information_format": "plain_language",
+      "preferred_channel": "email"
+    },
+    "product_preferences": {
+      "coverage_goal": "minimum",
+      "deductible_appetite": "low",
+      "valued_addons": [
+        "emergency_assistance",
+        "personal_belongings"
+      ]
+    }
+  },
+  {
+    "persona_id": "P_010",
+    "driving_usage_profile": {
+      "commute_distance_km": 45,
+      "driving_environment": "highway",
+      "daily_parking": "private_garage",
+      "business_use": false,
+      "annual_mileage_band": "20k+",
+      "primary_drivers": [
+        {
+          "role": "self",
+          "age": 29
+        }
+      ]
+    },
+    "customer_segment_profile": {
+      "price_sensitivity": "medium",
+      "buyer_type": "first_time",
+      "switching_reason": null,
+      "claims_trauma": false
+    },
+    "service_preferences": {
+      "communication_style": "detailed",
+      "decision_style": "multiple_options",
+      "information_format": "plain_language",
+      "preferred_channel": "email"
+    },
+    "product_preferences": {
+      "coverage_goal": "maximum",
+      "deductible_appetite": "low",
+      "valued_addons": [
+        "accident_forgiveness",
+        "collision_coverage"
+      ]
+    }
+  },
+  {
+    "persona_id": "P_009",
+    "driving_usage_profile": {
+      "commute_distance_km": 45,
+      "driving_environment": "highway",
+      "daily_parking": "private_garage",
+      "business_use": true,
+      "annual_mileage_band": "20k+",
+      "primary_drivers": [
+        {
+          "role": "self",
+          "age": 45
+        }
+      ]
+    },
+    "customer_segment_profile": {
+      "price_sensitivity": "low",
+      "buyer_type": "first_time",
+      "switching_reason": null,
+      "claims_trauma": false
+    },
+    "service_preferences": {
+      "communication_style": "detailed",
+      "decision_style": "multiple_options",
+      "information_format": "plain_language",
+      "preferred_channel": "email"
+    },
+    "product_preferences": {
+      "coverage_goal": "minimum",
+      "deductible_appetite": "low",
+      "valued_addons": [
+        "windshield_cover",
+        "personal_accident_cover"
+      ]
+    }
+  },
+  {
+    "persona_id": "P_008",
+    "driving_usage_profile": {
+      "commute_distance_km": 45,
+      "driving_environment": "highway",
+      "daily_parking": "private_garage",
+      "business_use": true,
+      "annual_mileage_band": "20k+",
+      "primary_drivers": [
+        {
+          "role": "self",
+          "age": 28
+        }
+      ]
+    },
+    "customer_segment_profile": {
+      "price_sensitivity": "low",
+      "buyer_type": "first_time",
+      "switching_reason": null,
+      "claims_trauma": false
+    },
+    "service_preferences": {
+      "communication_style": "detailed",
+      "decision_style": "multiple_options",
+      "information_format": "plain_language",
+      "preferred_channel": "email"
+    },
+    "product_preferences": {
+      "coverage_goal": "minimum",
+      "deductible_appetite": "low",
+      "valued_addons": [
+        "personal_accident_cover",
+        "third_party_theft"
+      ]
+    }
+  },
+  {
+    "persona_id": "P_001",
+    "driving_usage_profile": {
+      "commute_distance_km": 12,
+      "driving_environment": "city",
+      "daily_parking": "private_garage",
+      "business_use": false,
+      "annual_mileage_band": "0-5k",
+      "primary_drivers": [
+        {
+          "role": "self",
+          "age": 45
+        }
+      ]
+    },
+    "customer_segment_profile": {
+      "price_sensitivity": "medium",
+      "buyer_type": "first_time",
+      "switching_reason": null,
+      "claims_trauma": false
+    },
+    "service_preferences": {
+      "communication_style": "detailed",
+      "decision_style": "multiple_options",
+      "information_format": "plain_language",
+      "preferred_channel": "email"
+    },
+    "product_preferences": {
+      "coverage_goal": "maximum",
+      "deductible_appetite": "low",
+      "valued_addons": [
+        "green_discount",
+        "electric_vehicle_coverage"
+      ]
+    }
+  },
+  {
+    "persona_id": "P_005",
+    "driving_usage_profile": {
+      "commute_distance_km": 12,
+      "driving_environment": "highway",
+      "daily_parking": "private_garage",
+      "business_use": false,
+      "annual_mileage_band": "20k+",
+      "primary_drivers": [
+        {
+          "role": "self",
+          "age": 27
+        }
+      ]
+    },
+    "customer_segment_profile": {
+      "price_sensitivity": "medium",
+      "buyer_type": "first_time",
+      "switching_reason": null,
+      "claims_trauma": false
+    },
+    "service_preferences": {
+      "communication_style": "detailed",
+      "decision_style": "multiple_options",
+      "information_format": "plain_language",
+      "preferred_channel": "email"
+    },
+    "product_preferences": {
+      "coverage_goal": "maximum",
+      "deductible_appetite": "low",
+      "valued_addons": [
+        "new_car_replacement",
+        "personal_accident_cover"
+      ]
+    }
+  }
+]
