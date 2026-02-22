@@ -1,0 +1,1253 @@
+{
+  "persona_id": "P_003",
+  "life_events": {
+    "events": []
+  },
+  "sessions": [
+    {
+      "persona_id": "P_003",
+      "year": 2015,
+      "avg_intent_vector": {
+        "information_seeking": 0.7375,
+        "price_sensitivity": 0.49375,
+        "trust_level": 0.2375,
+        "decision_readiness": 0.375,
+        "emotional_valence": 0.375
+      },
+      "avg_strategy_vector": {
+        "credibility": 0.5533333333333333,
+        "emotional_appeal": 0.42,
+        "logical_argument": 0.6466666666666666,
+        "personalization": 0.56
+      },
+      "final_outcome": "Accept",
+      "trust_estimate": 0.2375,
+      "price_sensitivity_estimate": 0.49375,
+      "decision_readiness_end": 1.0,
+      "negotiation_moves": [
+        {
+          "user_request": 9000,
+          "agent_offer": 3000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        }
+      ]
+    },
+    {
+      "persona_id": "P_003",
+      "year": 2016,
+      "avg_intent_vector": {
+        "information_seeking": 0.6944444444444444,
+        "price_sensitivity": 0.6055555555555556,
+        "trust_level": 0.2222222222222222,
+        "decision_readiness": 0.3833333333333333,
+        "emotional_valence": 0.35000000000000003
+      },
+      "avg_strategy_vector": {
+        "credibility": 0.5352941176470588,
+        "emotional_appeal": 0.5764705882352942,
+        "logical_argument": 0.5352941176470588,
+        "personalization": 0.6882352941176471
+      },
+      "final_outcome": "Accept",
+      "trust_estimate": 0.2222222222222222,
+      "price_sensitivity_estimate": 0.6055555555555556,
+      "decision_readiness_end": 0.6,
+      "negotiation_moves": [
+        {
+          "user_request": 9000,
+          "agent_offer": 12000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        }
+      ]
+    },
+    {
+      "persona_id": "P_003",
+      "year": 2016,
+      "avg_intent_vector": {
+        "information_seeking": 0.6833333333333333,
+        "price_sensitivity": 0.6055555555555556,
+        "trust_level": 0.2111111111111111,
+        "decision_readiness": 0.3888888888888889,
+        "emotional_valence": 0.3333333333333333
+      },
+      "avg_strategy_vector": {
+        "credibility": 0.6,
+        "emotional_appeal": 0.5117647058823529,
+        "logical_argument": 0.5647058823529412,
+        "personalization": 0.6529411764705882
+      },
+      "final_outcome": "Accept",
+      "trust_estimate": 0.2111111111111111,
+      "price_sensitivity_estimate": 0.6055555555555556,
+      "decision_readiness_end": 0.3,
+      "negotiation_moves": [
+        {
+          "user_request": 27000,
+          "agent_offer": 3600
+        },
+        {
+          "user_request": 27000,
+          "agent_offer": 2000
+        },
+        {
+          "user_request": 27000,
+          "agent_offer": 2000
+        },
+        {
+          "user_request": 27000,
+          "agent_offer": 2000
+        },
+        {
+          "user_request": 25000,
+          "agent_offer": 25000
+        },
+        {
+          "user_request": 25000,
+          "agent_offer": 25000
+        },
+        {
+          "user_request": 25000,
+          "agent_offer": 25000
+        },
+        {
+          "user_request": 25000,
+          "agent_offer": 25000
+        },
+        {
+          "user_request": 25000,
+          "agent_offer": 25000
+        },
+        {
+          "user_request": 25000,
+          "agent_offer": 25000
+        },
+        {
+          "user_request": 24000,
+          "agent_offer": 25000
+        },
+        {
+          "user_request": 24000,
+          "agent_offer": 24000
+        }
+      ]
+    },
+    {
+      "persona_id": "P_003",
+      "year": 2017,
+      "avg_intent_vector": {
+        "information_seeking": 0.7166666666666667,
+        "price_sensitivity": 0.5944444444444446,
+        "trust_level": 0.23333333333333334,
+        "decision_readiness": 0.3888888888888889,
+        "emotional_valence": 0.35555555555555557
+      },
+      "avg_strategy_vector": {
+        "credibility": 0.6470588235294118,
+        "emotional_appeal": 0.4411764705882353,
+        "logical_argument": 0.6176470588235294,
+        "personalization": 0.5823529411764706
+      },
+      "final_outcome": "Accept",
+      "trust_estimate": 0.23333333333333334,
+      "price_sensitivity_estimate": 0.5944444444444446,
+      "decision_readiness_end": 0.3,
+      "negotiation_moves": [
+        {
+          "user_request": 12000,
+          "agent_offer": 12000
+        },
+        {
+          "user_request": 12000,
+          "agent_offer": 12000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 12000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 7000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 7000,
+          "agent_offer": 7000
+        },
+        {
+          "user_request": 7000,
+          "agent_offer": 7000
+        },
+        {
+          "user_request": 7000,
+          "agent_offer": 7000
+        },
+        {
+          "user_request": 7000,
+          "agent_offer": 7000
+        },
+        {
+          "user_request": 7000,
+          "agent_offer": 7000
+        },
+        {
+          "user_request": 7000,
+          "agent_offer": 7000
+        },
+        {
+          "user_request": 7000,
+          "agent_offer": 7000
+        },
+        {
+          "user_request": 7000,
+          "agent_offer": 7000
+        }
+      ]
+    },
+    {
+      "persona_id": "P_003",
+      "year": 2017,
+      "avg_intent_vector": {
+        "information_seeking": 0.7444444444444445,
+        "price_sensitivity": 0.5111111111111112,
+        "trust_level": 0.20555555555555555,
+        "decision_readiness": 0.33888888888888885,
+        "emotional_valence": 0.3388888888888889
+      },
+      "avg_strategy_vector": {
+        "credibility": 0.5647058823529412,
+        "emotional_appeal": 0.5235294117647059,
+        "logical_argument": 0.5588235294117647,
+        "personalization": 0.6294117647058823
+      },
+      "final_outcome": "Accept",
+      "trust_estimate": 0.20555555555555555,
+      "price_sensitivity_estimate": 0.5111111111111112,
+      "decision_readiness_end": 0.3,
+      "negotiation_moves": [
+        {
+          "user_request": 9500,
+          "agent_offer": 9500
+        },
+        {
+          "user_request": 9500,
+          "agent_offer": 6200
+        },
+        {
+          "user_request": 9500,
+          "agent_offer": 5000
+        },
+        {
+          "user_request": 9500,
+          "agent_offer": 5000
+        },
+        {
+          "user_request": 9500,
+          "agent_offer": 5000
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 5000
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 1200
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 1200
+        }
+      ]
+    },
+    {
+      "persona_id": "P_003",
+      "year": 2018,
+      "avg_intent_vector": {
+        "information_seeking": 0.7611111111111111,
+        "price_sensitivity": 0.5055555555555555,
+        "trust_level": 0.21666666666666667,
+        "decision_readiness": 0.3333333333333333,
+        "emotional_valence": 0.34444444444444444
+      },
+      "avg_strategy_vector": {
+        "credibility": 0.5470588235294118,
+        "emotional_appeal": 0.49411764705882355,
+        "logical_argument": 0.5882352941176471,
+        "personalization": 0.6764705882352942
+      },
+      "final_outcome": "Accept",
+      "trust_estimate": 0.21666666666666667,
+      "price_sensitivity_estimate": 0.5055555555555555,
+      "decision_readiness_end": 0.3,
+      "negotiation_moves": [
+        {
+          "user_request": 11500,
+          "agent_offer": 11500
+        },
+        {
+          "user_request": 11500,
+          "agent_offer": 11500
+        },
+        {
+          "user_request": 11500,
+          "agent_offer": 11500
+        },
+        {
+          "user_request": 11500,
+          "agent_offer": 11500
+        },
+        {
+          "user_request": 11500,
+          "agent_offer": 11500
+        },
+        {
+          "user_request": 11500,
+          "agent_offer": 11500
+        },
+        {
+          "user_request": 11500,
+          "agent_offer": 11500
+        },
+        {
+          "user_request": 11500,
+          "agent_offer": 11500
+        },
+        {
+          "user_request": 11500,
+          "agent_offer": 11500
+        },
+        {
+          "user_request": 11500,
+          "agent_offer": 11500
+        },
+        {
+          "user_request": 11500,
+          "agent_offer": 11500
+        }
+      ]
+    },
+    {
+      "persona_id": "P_003",
+      "year": 2018,
+      "avg_intent_vector": {
+        "information_seeking": 0.7055555555555555,
+        "price_sensitivity": 0.5611111111111111,
+        "trust_level": 0.2,
+        "decision_readiness": 0.36666666666666664,
+        "emotional_valence": 0.3333333333333333
+      },
+      "avg_strategy_vector": {
+        "credibility": 0.5705882352941176,
+        "emotional_appeal": 0.4647058823529412,
+        "logical_argument": 0.6,
+        "personalization": 0.6235294117647059
+      },
+      "final_outcome": "Accept",
+      "trust_estimate": 0.2,
+      "price_sensitivity_estimate": 0.5611111111111111,
+      "decision_readiness_end": 0.3,
+      "negotiation_moves": [
+        {
+          "user_request": 8500,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 6500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        }
+      ]
+    },
+    {
+      "persona_id": "P_003",
+      "year": 2019,
+      "avg_intent_vector": {
+        "information_seeking": 0.6055555555555556,
+        "price_sensitivity": 0.65,
+        "trust_level": 0.18888888888888888,
+        "decision_readiness": 0.4166666666666667,
+        "emotional_valence": 0.3055555555555556
+      },
+      "avg_strategy_vector": {
+        "credibility": 0.5529411764705883,
+        "emotional_appeal": 0.5,
+        "logical_argument": 0.5705882352941176,
+        "personalization": 0.6764705882352942
+      },
+      "final_outcome": "Accept",
+      "trust_estimate": 0.18888888888888888,
+      "price_sensitivity_estimate": 0.65,
+      "decision_readiness_end": 0.6,
+      "negotiation_moves": [
+        {
+          "user_request": 28692,
+          "agent_offer": 9500
+        },
+        {
+          "user_request": 12000,
+          "agent_offer": 28692
+        },
+        {
+          "user_request": 12000,
+          "agent_offer": 12000
+        },
+        {
+          "user_request": 12000,
+          "agent_offer": 12000
+        },
+        {
+          "user_request": 15000,
+          "agent_offer": 12000
+        },
+        {
+          "user_request": 15000,
+          "agent_offer": 15000
+        },
+        {
+          "user_request": 15000,
+          "agent_offer": 15000
+        },
+        {
+          "user_request": 14000,
+          "agent_offer": 15000
+        },
+        {
+          "user_request": 14000,
+          "agent_offer": 14000
+        },
+        {
+          "user_request": 14000,
+          "agent_offer": 14000
+        },
+        {
+          "user_request": 14000,
+          "agent_offer": 14000
+        },
+        {
+          "user_request": 14000,
+          "agent_offer": 14000
+        },
+        {
+          "user_request": 12000,
+          "agent_offer": 14000
+        }
+      ]
+    },
+    {
+      "persona_id": "P_003",
+      "year": 2020,
+      "avg_intent_vector": {
+        "information_seeking": 0.7,
+        "price_sensitivity": 0.5888888888888889,
+        "trust_level": 0.2222222222222222,
+        "decision_readiness": 0.36666666666666664,
+        "emotional_valence": 0.35555555555555557
+      },
+      "avg_strategy_vector": {
+        "credibility": 0.5588235294117647,
+        "emotional_appeal": 0.47058823529411764,
+        "logical_argument": 0.6176470588235294,
+        "personalization": 0.5705882352941176
+      },
+      "final_outcome": "Accept",
+      "trust_estimate": 0.2222222222222222,
+      "price_sensitivity_estimate": 0.5888888888888889,
+      "decision_readiness_end": 0.3,
+      "negotiation_moves": [
+        {
+          "user_request": 8500,
+          "agent_offer": 1000
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 3000
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 3000
+        },
+        {
+          "user_request": 8500,
+          "agent_offer": 3000
+        },
+        {
+          "user_request": 7000,
+          "agent_offer": 8500
+        },
+        {
+          "user_request": 7000,
+          "agent_offer": 7000
+        },
+        {
+          "user_request": 7000,
+          "agent_offer": 7000
+        },
+        {
+          "user_request": 7000,
+          "agent_offer": 7000
+        }
+      ]
+    },
+    {
+      "persona_id": "P_003",
+      "year": 2021,
+      "avg_intent_vector": {
+        "information_seeking": 0.7944444444444445,
+        "price_sensitivity": 0.49444444444444446,
+        "trust_level": 0.23333333333333334,
+        "decision_readiness": 0.3333333333333333,
+        "emotional_valence": 0.3666666666666667
+      },
+      "avg_strategy_vector": {
+        "credibility": 0.5470588235294118,
+        "emotional_appeal": 0.47058823529411764,
+        "logical_argument": 0.5882352941176471,
+        "personalization": 0.6294117647058823
+      },
+      "final_outcome": "Accept",
+      "trust_estimate": 0.23333333333333334,
+      "price_sensitivity_estimate": 0.49444444444444446,
+      "decision_readiness_end": 0.3,
+      "negotiation_moves": [
+        {
+          "user_request": 18000,
+          "agent_offer": 18000
+        },
+        {
+          "user_request": 18000,
+          "agent_offer": 18000
+        },
+        {
+          "user_request": 18000,
+          "agent_offer": 18000
+        },
+        {
+          "user_request": 18000,
+          "agent_offer": 18000
+        },
+        {
+          "user_request": 18000,
+          "agent_offer": 18000
+        },
+        {
+          "user_request": 18000,
+          "agent_offer": 18000
+        },
+        {
+          "user_request": 18000,
+          "agent_offer": 18000
+        },
+        {
+          "user_request": 18000,
+          "agent_offer": 18000
+        },
+        {
+          "user_request": 18000,
+          "agent_offer": 18000
+        },
+        {
+          "user_request": 15000,
+          "agent_offer": 18000
+        },
+        {
+          "user_request": 15000,
+          "agent_offer": 15000
+        },
+        {
+          "user_request": 15000,
+          "agent_offer": 15000
+        },
+        {
+          "user_request": 15000,
+          "agent_offer": 15000
+        },
+        {
+          "user_request": 15000,
+          "agent_offer": 15000
+        },
+        {
+          "user_request": 15000,
+          "agent_offer": 15000
+        }
+      ]
+    },
+    {
+      "persona_id": "P_003",
+      "year": 2022,
+      "avg_intent_vector": {
+        "information_seeking": 0.6466666666666666,
+        "price_sensitivity": 0.5933333333333334,
+        "trust_level": 0.23333333333333334,
+        "decision_readiness": 0.42666666666666664,
+        "emotional_valence": 0.3533333333333334
+      },
+      "avg_strategy_vector": {
+        "credibility": 0.55,
+        "emotional_appeal": 0.5428571428571428,
+        "logical_argument": 0.5571428571428572,
+        "personalization": 0.6357142857142858
+      },
+      "final_outcome": "Accept",
+      "trust_estimate": 0.23333333333333334,
+      "price_sensitivity_estimate": 0.5933333333333334,
+      "decision_readiness_end": 1.0,
+      "negotiation_moves": [
+        {
+          "user_request": 25000,
+          "agent_offer": 25000
+        },
+        {
+          "user_request": 25000,
+          "agent_offer": 25000
+        },
+        {
+          "user_request": 18000,
+          "agent_offer": 25000
+        },
+        {
+          "user_request": 25000,
+          "agent_offer": 18000
+        },
+        {
+          "user_request": 18000,
+          "agent_offer": 18000
+        },
+        {
+          "user_request": 18000,
+          "agent_offer": 18000
+        },
+        {
+          "user_request": 18000,
+          "agent_offer": 18000
+        },
+        {
+          "user_request": 18000,
+          "agent_offer": 18000
+        },
+        {
+          "user_request": 18000,
+          "agent_offer": 18000
+        },
+        {
+          "user_request": 18000,
+          "agent_offer": 18000
+        },
+        {
+          "user_request": 18000,
+          "agent_offer": 18000
+        },
+        {
+          "user_request": 18000,
+          "agent_offer": 1000
+        },
+        {
+          "user_request": 18000,
+          "agent_offer": 18000
+        }
+      ]
+    },
+    {
+      "persona_id": "P_003",
+      "year": 2023,
+      "avg_intent_vector": {
+        "information_seeking": 0.7277777777777777,
+        "price_sensitivity": 0.5166666666666667,
+        "trust_level": 0.2111111111111111,
+        "decision_readiness": 0.33888888888888885,
+        "emotional_valence": 0.3277777777777778
+      },
+      "avg_strategy_vector": {
+        "credibility": 0.5823529411764706,
+        "emotional_appeal": 0.5,
+        "logical_argument": 0.5764705882352942,
+        "personalization": 0.6352941176470589
+      },
+      "final_outcome": "Reject",
+      "trust_estimate": 0.2111111111111111,
+      "price_sensitivity_estimate": 0.5166666666666667,
+      "decision_readiness_end": 0.3,
+      "negotiation_moves": [
+        {
+          "user_request": 12000,
+          "agent_offer": 3000
+        },
+        {
+          "user_request": 12000,
+          "agent_offer": 12000
+        },
+        {
+          "user_request": 12000,
+          "agent_offer": 12000
+        },
+        {
+          "user_request": 12000,
+          "agent_offer": 12000
+        },
+        {
+          "user_request": 12000,
+          "agent_offer": 12000
+        },
+        {
+          "user_request": 12000,
+          "agent_offer": 12000
+        },
+        {
+          "user_request": 12000,
+          "agent_offer": 12000
+        },
+        {
+          "user_request": 12000,
+          "agent_offer": 12000
+        }
+      ]
+    }
+  ],
+  "strategy_memory": {
+    "stats": {
+      "Emotional": {
+        "success_count": 29,
+        "total_uses": 35,
+        "total_delta_readiness": 1.0
+      },
+      "Logical": {
+        "success_count": 30,
+        "total_uses": 44,
+        "total_delta_readiness": -0.5
+      },
+      "Credibility": {
+        "success_count": 19,
+        "total_uses": 25,
+        "total_delta_readiness": 0.5999999999999999
+      }
+    }
+  },
+  "latent_state": {
+    "trust": 0.29739941617874854,
+    "price_sensitivity": 0.5420127278346104,
+    "commitment": 0.3,
+    "logical_resp": 0.3952217384785565,
+    "emotional_resp": 0.5431174308127794,
+    "credibility_resp": 0.6309112979443618,
+    "concession_expectation": 0.5
+  },
+  "concession_memory": {
+    "negotiation_graph": {
+      "initial_price": 0,
+      "user_request": 12000,
+      "agent_offer": 12000,
+      "user_final_request": 0
+    },
+    "user_requests_history": [
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      12000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      8500,
+      8500,
+      8500,
+      30000,
+      27000,
+      27000,
+      27000,
+      27000,
+      25000,
+      25000,
+      25000,
+      25000,
+      25000,
+      25000,
+      24000,
+      24000,
+      12000,
+      12000,
+      12000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      7000,
+      7000,
+      7000,
+      7000,
+      7000,
+      7000,
+      7000,
+      7000,
+      7000,
+      9500,
+      9500,
+      9500,
+      9500,
+      9500,
+      9500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      11500,
+      11500,
+      11500,
+      11500,
+      11500,
+      11500,
+      11500,
+      11500,
+      11500,
+      11500,
+      11500,
+      11500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      9500,
+      28692,
+      12000,
+      12000,
+      12000,
+      15000,
+      15000,
+      15000,
+      14000,
+      14000,
+      14000,
+      14000,
+      14000,
+      12000,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      7000,
+      7000,
+      7000,
+      7000,
+      18000,
+      18000,
+      18000,
+      18000,
+      18000,
+      18000,
+      18000,
+      18000,
+      18000,
+      18000,
+      15000,
+      15000,
+      15000,
+      15000,
+      15000,
+      15000,
+      25000,
+      25000,
+      18000,
+      25000,
+      18000,
+      18000,
+      18000,
+      18000,
+      18000,
+      18000,
+      18000,
+      18000,
+      18000,
+      12000,
+      12000,
+      12000,
+      12000,
+      12000,
+      12000,
+      12000,
+      12000
+    ],
+    "agent_offers_history": [
+      1000,
+      3000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      12000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      8500,
+      8500,
+      3600,
+      2000,
+      2000,
+      2000,
+      25000,
+      25000,
+      25000,
+      25000,
+      25000,
+      25000,
+      25000,
+      24000,
+      12000,
+      12000,
+      9000,
+      9000,
+      9000,
+      9000,
+      7000,
+      7000,
+      7000,
+      7000,
+      7000,
+      7000,
+      7000,
+      9500,
+      6200,
+      5000,
+      5000,
+      5000,
+      5000,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      150000,
+      150000,
+      150000,
+      1200,
+      150000,
+      11500,
+      11500,
+      11500,
+      11500,
+      11500,
+      11500,
+      11500,
+      11500,
+      11500,
+      11500,
+      11500,
+      9000,
+      8500,
+      8500,
+      8500,
+      6500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      9500,
+      28692,
+      12000,
+      12000,
+      12000,
+      15000,
+      15000,
+      14000,
+      14000,
+      14000,
+      14000,
+      1000,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      8500,
+      3000,
+      8500,
+      7000,
+      7000,
+      7000,
+      18000,
+      18000,
+      18000,
+      18000,
+      18000,
+      18000,
+      18000,
+      18000,
+      15000,
+      15000,
+      15000,
+      15000,
+      15000,
+      25000,
+      25000,
+      18000,
+      18000,
+      18000,
+      18000,
+      18000,
+      18000,
+      18000,
+      1000,
+      18000,
+      3000,
+      12000,
+      12000,
+      12000,
+      12000,
+      12000,
+      12000,
+      12000
+    ]
+  }
+}

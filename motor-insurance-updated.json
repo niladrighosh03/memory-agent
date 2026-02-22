@@ -1,0 +1,188 @@
+{
+  "Motor Insurance": {
+    "description": {
+      "New India Assurance General Insurance": "New India Assurance, one of the oldest and most trusted insurers in India, provides robust protection by covering a wide range of risks including collisions, theft, fire, natural calamities, and incidental damages. With a massive network of authorized garages, it simplifies claim settlements through a quick, cashless process. The company offers 24x7 roadside assistance, doorstep claim support, and easy add-on integration. Dedicated plans exist for both private and commercial vehicles, making it versatile for all customer segments.",
+      "ICICI Lombard General Insurance": "ICICI Lombard provides technologically advanced motor insurance products with extensive coverage for accidents, theft, fire, and natural calamities. It has over 9,000 network garages, offers overnight repair service, doorstep pickup/drop facilities, and AI-driven claim settlements. Its mobile app supports video-based self-inspection, instant policy issuance, and seamless claim tracking. It also provides coverage for consumables, depreciation, and luxury car accessories, ensuring complete financial protection.",
+      "HDFC ERGO General Insurance": "HDFC ERGO delivers transparent and digital-first motor insurance. Policies cover theft, accidents, third-party liability, and natural disasters, with strong 24/7 support. The 'Insta Claim' system offers approvals within minutes, while telematics-based monitoring rewards safe drivers with premium discounts. HDFC ERGO also designs customized policies for electric vehicles, luxury cars, and two-wheelers. Backed by ERGO Group (Germany), it blends global standards with local expertise.",
+      "Bajaj Allianz General Insurance": "Bajaj Allianz emphasizes reliability and speed with a policy that includes comprehensive damage protection, consumables cover, and accident shield add-ons. With 7,000+ cashless garages and real-time claim tracking, it ensures minimal downtime for policyholders. The insurer also provides zero depreciation, key replacement, and accident hospitalization benefits. Its strong financial base ensures smooth settlements even during mass claims after natural disasters.",
+      "Reliance General Insurance": "Reliance General focuses on digital-first experiences with self-inspection through its app, paperless claim approvals, and doorstep claim assistance. It covers accidents, theft, fire, natural calamities, and offers special plans for electric and hybrid vehicles. Known for one of the fastest claim settlement records, it also offers unique add-ons like return-to-invoice, depreciation cover, and emergency roadside support across India.",
+      "Tata AIG General Insurance": "Tata AIG combines the trust of Tata with the expertise of AIG. Its plans cover natural disasters, theft, collision damages, and liabilities. Features include InstaClaim Settlement, 24/7 roadside support, and emergency fuel delivery. Tata AIG provides exclusive coverage for luxury cars and EVs, including battery protection. Its customer service is multilingual and highly rated, ensuring smooth assistance across India.",
+      "IFFCO Tokio General Insurance": "IFFCO Tokio offers affordable, reliable motor insurance, covering theft, accidents, fire, and calamities. Its policies include unlimited roadside assistance calls, cashless services at 4,300+ garages, and coverage for CNG/LPG vehicles. Designed with rural and urban users in mind, it provides simple, transparent policies and quick settlements, making it a trusted choice across India.",
+      "United India General Insurance": "United India, a government-owned insurer, provides flexible coverage options for private and commercial vehicles. It offers protection for accidents, theft, natural disasters, and liabilities. With 3,000+ garages and regional service desks, it ensures quick support even in semi-urban and rural areas. Its fleet insurance plans, bulk policy discounts, and strong financial stability make it attractive to corporate clients and transport operators.",
+      "National General Insurance": "National Insurance Company, a legacy public sector insurer, provides comprehensive vehicle coverage with simple, transparent terms. It covers theft, accidents, calamities, and liabilities, while offering niche add-ons like accessories protection and passenger cover. With a strong office presence across India, it ensures multilingual support. The company is known for catering to unique segments like vintage and classic car owners.",
+      "Oriental General Insurance": "Oriental Insurance offers all-round protection against theft, fire, disasters, and accidents. With a strong nationwide garage network, it ensures quick, cashless repairs. It also provides unique add-ons like alternative transport allowance, personal belongings cover, and nil depreciation benefits. Its versatility makes it popular among both private and commercial vehicle owners.",
+      "SBI General Insurance": "SBI General provides affordable, accessible vehicle insurance tailored for small-town and rural customers. With third-party liability, own damage, theft, and disaster coverage, it ensures broad protection. Add-ons include depreciation cover, return-to-invoice, and roadside assistance. Backed by State Bank of India, its strong financial trust makes it a reliable choice for first-time buyers.",
+      "Kotak Mahindra General Insurance": "Kotak General offers modern motor insurance with comprehensive coverage against theft, accidents, fire, and calamities. Its mobile app enables instant issuance, paperless renewals, and claim tracking. Known for quick settlements and flexible customization, it appeals strongly to urban, tech-savvy vehicle owners.",
+      "Future Generali General Insurance": "Future Generali provides extensive motor insurance, covering own damage, theft, accidents, and liabilities. With a 3,000+ garage network and features like cashless repairs, no claim bonus, and add-ons (engine protector, consumables cover), it ensures strong financial protection. The insurer emphasizes personal service with app-based claims and dedicated helplines.",
+      "Liberty General Insurance": "Liberty General offers budget-friendly but comprehensive vehicle protection. It covers accidents, theft, fire, and third-party liability with optional add-ons like zero depreciation, key replacement, and roadside help. Its customer-centric approach and hassle-free claim settlement have made it a growing choice among middle-class families and first-time car owners.",
+      "Royal Sundaram General Insurance": "Royal Sundaram provides flexible motor insurance with coverage for theft, fire, accidents, and calamities. Add-ons include co-passenger accident cover, depreciation reimbursement, and emergency transport expenses. Known for fast approvals (within 7 days), Royal Sundaram also offers policies with coverage beyond India (on request), making it attractive for cross-border travelers.",
+      "Cholamandalam MS General Insurance": "Chola MS provides reliable policies covering accidents, theft, calamities, and liabilities. Popular among both individuals and commercial vehicle owners, it offers add-ons like zero depreciation, return-to-invoice, and roadside assistance. With strong customer support and quick settlements, it is a preferred choice for fleet operators.",
+      "Bharti AXA General Insurance (now merged with ICICI Lombard)": "Bharti AXA was known for transparent, affordable motor insurance covering theft, accidents, and liabilities. Post-merger, ICICI Lombard continues its policies. Bharti AXA's legacy customers benefit from easy claim processing and wide garage networks under ICICI Lombard.",
+      "Digit General Insurance": "Digit Insurance is a new-age digital-first insurer providing fully online motor insurance with customizable IDV, smartphone-based claim inspections, and paperless policy issuance. It covers own damage, theft, calamities, and third-party liabilities. Popular among millennials, Digit offers unique add-ons like tire protection, consumables cover, and roadside breakdown support.",
+      "ACKO General Insurance": "ACKO is a digital-only insurer providing zero-commission, app-based policies with instant settlements. Known for its pocket-friendly premiums and same-day settlement for minor claims, ACKO specializes in two-wheeler and car insurance. Its short-term coverage and app-first service model make it a disruptor in the Indian insurance market."
+    },
+    "pricing_information": {
+      "third_party_premium_rates_2025": {
+        "description": "IRDAI mandated third-party premium rates (same across all insurers)",
+        "engine_capacity_based": {
+          "up_to_1000cc": {"annual_premium": "₹2,094", "3_year_premium": "₹6,521"},
+          "1000cc_to_1500cc": {"annual_premium": "₹3,416", "3_year_premium": "₹10,640"},
+          "above_1500cc": {"annual_premium": "₹7,897", "3_year_premium": "₹24,596"}
+        },
+        "electric_vehicles": {
+          "up_to_30kw": {"annual_premium": "₹1,780", "3_year_premium": "₹5,543"},
+          "30kw_to_65kw": {"annual_premium": "₹2,904", "3_year_premium": "₹9,044"},
+          "above_65kw": {"annual_premium": "₹6,712", "3_year_premium": "₹20,907"}
+        }
+      },
+      "comprehensive_premium_ranges": {
+        "New India Assurance": {"starting_premium": "₹2,094", "comprehensive_range": "₹6,000 - ₹25,000", "cashless_garages": "3,000+", "claim_settlement_ratio": "95%"},
+        "ICICI Lombard": {"starting_premium": "₹2,094", "comprehensive_range": "₹6,000 - ₹30,000", "cashless_garages": "5,900+", "claim_settlement_ratio": "96.75%"},
+        "HDFC ERGO": {"starting_premium": "₹2,094", "comprehensive_range": "₹5,500 - ₹28,000", "cashless_garages": "8,200+", "claim_settlement_ratio": "99%"},
+        "Bajaj Allianz": {"starting_premium": "₹2,094", "comprehensive_range": "₹6,500 - ₹32,000", "cashless_garages": "7,200+", "claim_settlement_ratio": "98.5%"},
+        "Reliance General": {"starting_premium": "₹2,094", "comprehensive_range": "₹5,800 - ₹27,000", "cashless_garages": "8,200+", "claim_settlement_ratio": "98%"},
+        "Tata AIG": {"starting_premium": "₹2,094", "comprehensive_range": "₹7,000 - ₹35,000", "cashless_garages": "7,500+", "claim_settlement_ratio": "N/A"},
+        "IFFCO Tokio": {"starting_premium": "₹2,094", "comprehensive_range": "₹5,500 - ₹24,000", "cashless_garages": "4,300+", "claim_settlement_ratio": "95.8%"},
+        "SBI General": {"starting_premium": "₹3,043", "comprehensive_range": "₹6,500 - ₹28,000", "cashless_garages": "16,000+", "claim_settlement_ratio": "100%"},
+        "Digit General": {"starting_premium": "₹2,094", "comprehensive_range": "₹5,200 - ₹26,000", "cashless_garages": "Repair Anywhere", "claim_settlement_ratio": "96%"},
+        "ACKO General": {"starting_premium": "₹2,762", "comprehensive_range": "₹5,000 - ₹22,000", "cashless_garages": "Digital-first model", "claim_settlement_ratio": "94%"},
+        "United India": {"starting_premium": "₹2,094", "comprehensive_range": "₹6,200 - ₹26,000", "cashless_garages": "3,100+", "claim_settlement_ratio": "95%"},
+        "Oriental Insurance": {"starting_premium": "₹1,994", "comprehensive_range": "₹5,800 - ₹25,000", "cashless_garages": "3,100+", "claim_settlement_ratio": "94%"}
+      }
+    },
+    "features_classification": {
+      "core_coverage_features": [
+        "Comprehensive Coverage (Own Damage + Third Party)",
+        "Third-Party Liability Coverage",
+        "Collision Damage Protection",
+        "Theft & Fire Protection",
+        "Natural Calamity Coverage (floods, earthquakes, storms, etc.)",
+        "Legal Liability for Passengers & Paid Drivers"
+      ],
+      "service_features": [
+        "Cashless Repair Facility",
+        "24/7 Roadside Assistance",
+        "Instant Claim Settlement via App",
+        "Paperless Claim Process",
+        "Network Garages Nationwide",
+        "Multi-Language Customer Support",
+        "Doorstep Claim Assistance",
+        "Online Policy Management"
+      ],
+      "bonus_discount_features": [
+        "No Claim Bonus (NCB) Benefits - Up to 50%",
+        "Digital Purchase Discounts",
+        "Loyalty Discounts",
+        "Multi-Year Policy Discounts",
+        "Anti-Theft Device Discounts",
+        "Professional Association Discounts"
+      ],
+      "specialized_coverage": [
+        "Coverage for CNG/LPG & EV Vehicles",
+        "Electric Vehicle Battery Protection",
+        "Telematics-Based Monitoring for Safe Drivers",
+        "Pay-As-You-Drive Options",
+        "Coverage for Fleet and Commercial Vehicles",
+        "Vintage and Classic Car Coverage"
+      ]
+    },
+    "add_ons_detailed": {
+      "protection_riders": {
+        "Zero Depreciation Cover": {"description": "Ensures repairs/replacements are reimbursed at full cost without depreciation deductions", "cost_range": "₹800 - ₹3,000 annually", "coverage": "100% for metal/plastic parts, 50% for tyres/batteries"},
+        "Engine & Gearbox Protection": {"description": "Covers mechanical parts like engine, gearbox, and transmission system", "cost_range": "₹1,200 - ₹4,500 annually", "coverage": "Water damage, oil leakage, mechanical breakdowns"},
+        "Return to Invoice": {"description": "Reimburses full invoice value including taxes in case of total loss/theft", "cost_range": "₹1,500 - ₹5,000 annually", "coverage": "Full vehicle invoice value including registration"},
+        "Consumables Cover": {"description": "Covers consumable items like nuts, bolts, grease, lubricants during repairs", "cost_range": "₹500 - ₹2,000 annually", "coverage": "Engine oil, brake oil, coolant, etc."},
+        "Personal Accident Cover": {"description": "Coverage for death, disability, and medical expenses of driver and passengers", "cost_range": "₹300 - ₹1,500 annually", "coverage": "Up to ₹15 lakhs for owner-driver"}
+      },
+      "convenience_services": {
+        "Roadside Assistance": {"description": "24/7 breakdown support including towing, fuel delivery, tire replacement", "cost_range": "₹400 - ₹1,200 annually", "services": "Towing, battery jumpstart, flat tire, fuel delivery"},
+        "Key & Lock Replacement": {"description": "Provides coverage for replacement of lost/stolen car keys and lock sets", "cost_range": "₹200 - ₹800 annually", "coverage": "Up to ₹5,000 - ₹65,000 per incident"},
+        "Daily Allowance Benefit": {"description": "Provides daily cash allowance for alternate travel during repairs", "cost_range": "₹300 - ₹1,000 annually", "coverage": "₹500 - ₹2,000 per day for 15-30 days"}
+      },
+      "advanced_protection": {
+        "NCB Protection": {"description": "Protects No Claim Bonus even after making a claim", "cost_range": "₹200 - ₹1,500 annually", "benefit": "Retains NCB discount for next renewal"},
+        "Tyre Protection": {"description": "Covers damage/replacement of tyres and rims", "cost_range": "₹800 - ₹2,500 annually", "coverage": "Up to 4 tyres per policy year"},
+        "Passenger Cover": {"description": "Accident coverage for passengers traveling in the vehicle", "cost_range": "₹200 - ₹1,000 annually", "coverage": "₹1-2 lakhs per passenger"}
+      }
+    },
+    "insurer_specific_features": {
+      "New India Assurance": {
+        "unique_features": ["Government backing", "Extensive rural presence", "Multi-vehicle discounts"],
+        "special_plans": ["Fleet insurance", "Vintage car coverage"],
+        "digital_services": ["Mobile app", "Online renewals", "Digital claims"]
+      },
+      "ICICI Lombard": {
+        "unique_features": ["AI-driven claims", "Video inspection", "Overnight repairs"],
+        "special_plans": ["Luxury car packages", "EV-specific plans"],
+        "digital_services": ["IL TakeCare app", "Instant policy", "Self-inspection"]
+      },
+      "HDFC ERGO": {
+        "unique_features": ["Insta Claim system", "Telematics monitoring", "German expertise"],
+        "special_plans": ["Pay-as-you-drive", "EV coverage", "Two-wheeler plans"],
+        "digital_services": ["Digital-first approach", "App-based claims", "Online IDV customization"]
+      },
+      "Bajaj Allianz": {
+        "unique_features": ["Real-time tracking", "Drive Assure plans", "Spot assistance"],
+        "special_plans": ["Economy Plus", "Commercial vehicle coverage"],
+        "digital_services": ["Mobile claims", "Online calculator", "Digital renewals"]
+      },
+      "Reliance General": {
+        "unique_features": ["Self-inspection app", "Video claims", "Fastest settlements"],
+        "special_plans": ["Electric/hybrid vehicles", "Multi-vehicle policies"],
+        "digital_services": ["Paperless process", "App-based inspection", "Digital payments"]
+      },
+      "Digit General": {
+        "unique_features": ["Fully digital", "Customizable IDV", "Millennial-focused"],
+        "special_plans": ["Short-term coverage", "Usage-based insurance"],
+        "digital_services": ["100% online", "Smartphone claims", "Instant policy"]
+      },
+      "ACKO General": {
+        "unique_features": ["Zero commission", "Same-day settlements", "App-only model"],
+        "special_plans": ["Micro-insurance", "Flexible coverage periods"],
+        "digital_services": ["Digital-only platform", "Instant settlements", "AI-powered"]
+      }
+    },
+    "exclusions": {
+      "common_exclusions": [
+        "Normal wear and tear and depreciation",
+        "Driving under influence of alcohol/drugs",
+        "Driving without valid license",
+        "War, terrorism, and nuclear risks",
+        "Consequential losses",
+        "Use outside geographical limits (India)",
+        "Modifications without declaration",
+        "Racing and competitive events"
+      ],
+      "mechanical_exclusions": [
+        "Mechanical/electrical breakdowns (unless covered by add-on)",
+        "Engine damage due to lack of maintenance",
+        "Damage due to oil leakage (unless engine protection add-on)"
+      ]
+    },
+    "market_insights": {
+      "premium_factors": [
+        "Vehicle IDV (Insured Declared Value)",
+        "Engine capacity and fuel type",
+        "Age and condition of vehicle",
+        "Geographical location and RTO",
+        "Claim history and NCB status",
+        "Type of coverage and add-ons selected",
+        "Safety features and anti-theft devices"
+      ],
+      "cost_saving_tips": [
+        "Maintain claim-free record for NCB benefits",
+        "Install ARAI-approved anti-theft devices",
+        "Choose higher voluntary deductible",
+        "Buy online for digital discounts",
+        "Compare quotes from multiple insurers",
+        "Opt for multi-year policies",
+        "Choose appropriate IDV (not too high/low)"
+      ],
+      "claim_settlement_trends": {
+        "average_settlement_time": "7-15 days for cashless, 15-30 days for reimbursement",
+        "digital_claims_growth": "60% of claims now processed digitally",
+        "cashless_preference": "80% customers prefer cashless settlements"
+      }
+    }
+  }
+}

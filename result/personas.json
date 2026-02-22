@@ -1,0 +1,126 @@
+[
+    {
+        "persona_id": "P_001",
+        "archetype": "Young urban professional",
+        "driving_usage_profile": {
+            "commute_distance_km": "15 km one-way (approx 30 km/day)",
+            "driving_environment": "Dense urban (congested city traffic, frequent stop-start; occasional weekend highway drives)",
+            "daily_parking": "Paid secure basement parking in apartment complex",
+            "business_use": true,
+            "annual_mileage_band": "10,000-15,000 km",
+            "primary_drivers": [
+                {
+                    "role": "Owner-driver (self)",
+                    "age": 29
+                }
+            ]
+        },
+        "customer_segment_profile": {
+            "price_sensitivity": "Moderate \u2014 cost conscious but willing to pay for clear value and convenience",
+            "buyer_type": "Digital-first comparison shopper who reads reviews and uses aggregators",
+            "switching_reason": "Seeks better online renewal pricing and simpler claims process after noticing steep premium hike",
+            "claims_trauma": "Low to moderate \u2014 one minor claim two years ago with slow paperwork/settlement; now prefers insurers with fast digital claims"
+        },
+        "service_preferences": {
+            "communication_style": "Concise, transactional updates (SMS/WhatsApp) and email for paperwork",
+            "decision_style": "Research-driven; compares 2\u20133 options, then decides quickly if differences are clear",
+            "information_format": "Prefers short comparison tables, clear premium breakdowns, and FAQ/chatbot answers",
+            "preferred_channel": "Mobile app/website with live chat and quick digital endorsements/renewals"
+        },
+        "product_preferences": {
+            "coverage_goal": "Comprehensive cover prioritizing protection against accidents, theft and third-party liability with minimal hassle",
+            "deductible_appetite": "Low deductible \u2014 willing to pay a modest premium increase to avoid high out-of-pocket on a claim",
+            "valued_addons": [
+                "Zero depreciation",
+                "24/7 roadside assistance",
+                "Return-to-invoice cover",
+                "Engine & gearbox protection",
+                "Key replacement and lockout assistance"
+            ]
+        }
+    },
+    {
+        "persona_id": "P_002",
+        "archetype": "Student / early career youth",
+        "driving_usage_profile": {
+            "commute_distance_km": "8-12 km daily",
+            "driving_environment": "Urban, congested city roads with occasional weekend highway trips",
+            "daily_parking": "Paid university/office basement parking by day; street/shared apartment parking at night",
+            "business_use": false,
+            "annual_mileage_band": "3,000-6,000 km",
+            "primary_drivers": [
+                {
+                    "role": "Policyholder (self)",
+                    "age": 22
+                },
+                {
+                    "role": "Parent (occasional driver)",
+                    "age": 50
+                }
+            ]
+        },
+        "customer_segment_profile": {
+            "price_sensitivity": "High",
+            "buyer_type": "Digital comparison shopper and deal hunter",
+            "switching_reason": "Lower premium through student/young-driver discounts or better online offers",
+            "claims_trauma": "Low (no prior claims) but anxious about complex documentation and long claim turnarounds"
+        },
+        "service_preferences": {
+            "communication_style": "Short, digital-first (push notifications, WhatsApp updates)",
+            "decision_style": "Fast decisions driven by price, peers' recommendations and simple comparisons",
+            "information_format": "Concise bullet points and clear premium/component breakdowns",
+            "preferred_channel": "Mobile app with chat/WhatsApp support"
+        },
+        "product_preferences": {
+            "coverage_goal": "Affordable comprehensive cover prioritizing theft, fire and personal accident; preserve NCB",
+            "deductible_appetite": "Willing to accept a moderate voluntary excess to reduce premium",
+            "valued_addons": [
+                "Roadside assistance",
+                "NCB protection",
+                "Personal accident cover (owner-driver)"
+            ]
+        }
+    },
+    {
+        "persona_id": "P_003",
+        "archetype": "Budget-conscious daily commuter",
+        "driving_usage_profile": {
+            "commute_distance_km": "16 km one-way (\u224832 km round-trip)",
+            "driving_environment": "Dense urban traffic with frequent stop-start driving, narrow inner-city streets and occasional highway stretches",
+            "daily_parking": "Street parking outside apartment (uncovered, basic security)",
+            "business_use": false,
+            "annual_mileage_band": "8,000\u201312,000 km",
+            "primary_drivers": [
+                {
+                    "role": "Primary (self)",
+                    "age": 34
+                },
+                {
+                    "role": "Spouse (occasional driver)",
+                    "age": 30
+                }
+            ]
+        },
+        "customer_segment_profile": {
+            "price_sensitivity": "Very high \u2014 selects cheapest acceptable option and watches renewals closely",
+            "buyer_type": "Informed bargain hunter (compares multiple aggregators and insurer offers before buying)",
+            "switching_reason": "Switches at renewal primarily to reduce premium or gain a demonstrable discount (15\u201330%)",
+            "claims_trauma": "Had a small own-damage claim two years ago that led to a premium hike and a slow payout; now reluctant to file minor claims"
+        },
+        "service_preferences": {
+            "communication_style": "Concise, transactional communications \u2014 prefers SMS/WhatsApp updates and minimal marketing calls",
+            "decision_style": "Fast, price-first decision after quick comparison; accepts only essential add-ons if they don't raise cost much",
+            "information_format": "Short bullet-point summaries and side-by-side premium comparisons (total yearly cost emphasized)",
+            "preferred_channel": "Mobile insurance aggregators/apps for quotes and purchase; WhatsApp for quick customer service; rarely visits branches"
+        },
+        "product_preferences": {
+            "coverage_goal": "Affordable comprehensive cover focused on legal compliance and protection against theft/major accidents while keeping premium low",
+            "deductible_appetite": "High \u2014 willing to accept a larger voluntary deductible to reduce premium",
+            "valued_addons": [
+                "Roadside assistance (affordable subscription)",
+                "Cashless garage network (wide network, low service friction)",
+                "Quick online claim settlement / app-driven claim tracking"
+            ]
+        }
+    }
+]

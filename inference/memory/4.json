@@ -1,0 +1,473 @@
+{
+  "persona_id": "P_001",
+  "life_events": {
+    "events": []
+  },
+  "sessions": [
+    {
+      "persona_id": "P_001",
+      "year": 2015,
+      "avg_intent_vector": {
+        "information_seeking": 0.59375,
+        "price_sensitivity": 0.83125,
+        "trust_level": 0.4,
+        "decision_readiness": 0.35625,
+        "emotional_valence": 0.4125
+      },
+      "avg_strategy_vector": {
+        "credibility": 0.6466666666666666,
+        "emotional_appeal": 0.3733333333333333,
+        "logical_argument": 0.6799999999999999,
+        "personalization": 0.5266666666666667
+      },
+      "final_outcome": "Reject",
+      "trust_estimate": 0.4,
+      "price_sensitivity_estimate": 0.83125,
+      "decision_readiness_end": 0.9,
+      "negotiation_moves": [
+        {
+          "user_request": 8000,
+          "agent_offer": 8000
+        },
+        {
+          "user_request": 8000,
+          "agent_offer": 8000
+        },
+        {
+          "user_request": 5000,
+          "agent_offer": 5000
+        },
+        {
+          "user_request": 8000,
+          "agent_offer": 5000
+        },
+        {
+          "user_request": 8000,
+          "agent_offer": 8000
+        },
+        {
+          "user_request": 8000,
+          "agent_offer": 8000
+        },
+        {
+          "user_request": 8000,
+          "agent_offer": 8000
+        },
+        {
+          "user_request": 8000,
+          "agent_offer": 8000
+        },
+        {
+          "user_request": 8000,
+          "agent_offer": 8000
+        },
+        {
+          "user_request": 7000,
+          "agent_offer": 7000
+        },
+        {
+          "user_request": 7500,
+          "agent_offer": 7000
+        },
+        {
+          "user_request": 7500,
+          "agent_offer": 7000
+        },
+        {
+          "user_request": 7500,
+          "agent_offer": 7500
+        },
+        {
+          "user_request": 7500,
+          "agent_offer": 7500
+        }
+      ]
+    },
+    {
+      "persona_id": "P_001",
+      "year": 2016,
+      "avg_intent_vector": {
+        "information_seeking": 0.7333333333333333,
+        "price_sensitivity": 0.7333333333333333,
+        "trust_level": 0.48000000000000004,
+        "decision_readiness": 0.3,
+        "emotional_valence": 0.5066666666666666
+      },
+      "avg_strategy_vector": {
+        "credibility": 0.5714285714285714,
+        "emotional_appeal": 0.5,
+        "logical_argument": 0.5785714285714285,
+        "personalization": 0.6142857142857142
+      },
+      "final_outcome": "Accept",
+      "trust_estimate": 0.48000000000000004,
+      "price_sensitivity_estimate": 0.7333333333333333,
+      "decision_readiness_end": 0.9,
+      "negotiation_moves": [
+        {
+          "user_request": 25000,
+          "agent_offer": 6200
+        },
+        {
+          "user_request": 5000,
+          "agent_offer": 25000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 25000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 6000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 6000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 6000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 6000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 6000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 6000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 6000
+        },
+        {
+          "user_request": 5500,
+          "agent_offer": 6000
+        },
+        {
+          "user_request": 5500,
+          "agent_offer": 5500
+        }
+      ]
+    },
+    {
+      "persona_id": "P_001",
+      "year": 2017,
+      "avg_intent_vector": {
+        "information_seeking": 0.7266666666666667,
+        "price_sensitivity": 0.7333333333333333,
+        "trust_level": 0.4066666666666666,
+        "decision_readiness": 0.2866666666666667,
+        "emotional_valence": 0.44666666666666666
+      },
+      "avg_strategy_vector": {
+        "credibility": 0.5785714285714285,
+        "emotional_appeal": 0.5,
+        "logical_argument": 0.5928571428571429,
+        "personalization": 0.6785714285714286
+      },
+      "final_outcome": "Reject",
+      "trust_estimate": 0.4066666666666666,
+      "price_sensitivity_estimate": 0.7333333333333333,
+      "decision_readiness_end": 0.9,
+      "negotiation_moves": [
+        {
+          "user_request": 12000,
+          "agent_offer": 25000
+        },
+        {
+          "user_request": 12000,
+          "agent_offer": 12000
+        },
+        {
+          "user_request": 11040,
+          "agent_offer": 11040
+        },
+        {
+          "user_request": 11040,
+          "agent_offer": 11040
+        },
+        {
+          "user_request": 11040,
+          "agent_offer": 11040
+        },
+        {
+          "user_request": 11276,
+          "agent_offer": 10000
+        },
+        {
+          "user_request": 11276,
+          "agent_offer": 11276
+        },
+        {
+          "user_request": 11276,
+          "agent_offer": 25000
+        },
+        {
+          "user_request": 11276,
+          "agent_offer": 25000
+        },
+        {
+          "user_request": 11276,
+          "agent_offer": 25000
+        },
+        {
+          "user_request": 11276,
+          "agent_offer": 11276
+        },
+        {
+          "user_request": 10373,
+          "agent_offer": 11276
+        },
+        {
+          "user_request": 10373,
+          "agent_offer": 10373
+        }
+      ]
+    },
+    {
+      "persona_id": "P_001",
+      "year": 2017,
+      "avg_intent_vector": {
+        "information_seeking": 0.7444444444444445,
+        "price_sensitivity": 0.7388888888888889,
+        "trust_level": 0.4444444444444444,
+        "decision_readiness": 0.25555555555555554,
+        "emotional_valence": 0.47777777777777775
+      },
+      "avg_strategy_vector": {
+        "credibility": 0.5764705882352942,
+        "emotional_appeal": 0.45294117647058824,
+        "logical_argument": 0.5823529411764706,
+        "personalization": 0.5823529411764706
+      },
+      "final_outcome": "Accept",
+      "trust_estimate": 0.4444444444444444,
+      "price_sensitivity_estimate": 0.7388888888888889,
+      "decision_readiness_end": 0.5,
+      "negotiation_moves": [
+        {
+          "user_request": 6000,
+          "agent_offer": 6000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 6000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 6000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 15000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 2000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 15000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 2000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 2000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 2000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 2000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 2000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 6000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 6000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 2000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 2000
+        },
+        {
+          "user_request": 6000,
+          "agent_offer": 6000
+        }
+      ]
+    }
+  ],
+  "strategy_memory": {
+    "stats": {
+      "Emotional": {
+        "success_count": 6,
+        "total_uses": 8,
+        "total_delta_readiness": 0.5999999999999999
+      },
+      "Logical": {
+        "success_count": 10,
+        "total_uses": 14,
+        "total_delta_readiness": 0.9000000000000001
+      },
+      "Credibility": {
+        "success_count": 6,
+        "total_uses": 10,
+        "total_delta_readiness": -0.5
+      }
+    }
+  },
+  "latent_state": {
+    "trust": 0.4771344444444444,
+    "price_sensitivity": 0.5879370138888887,
+    "commitment": 0.5,
+    "logical_resp": 0.500208954272595,
+    "emotional_resp": 0.5353795000000001,
+    "credibility_resp": 0.45516658055000003,
+    "concession_expectation": 0.5
+  },
+  "concession_memory": {
+    "negotiation_graph": {
+      "initial_price": 0,
+      "user_request": 6000,
+      "agent_offer": 6000,
+      "user_final_request": 0
+    },
+    "user_requests_history": [
+      8000,
+      8000,
+      8000,
+      5000,
+      8000,
+      8000,
+      8000,
+      8000,
+      8000,
+      8000,
+      7000,
+      7500,
+      7500,
+      7500,
+      7500,
+      25000,
+      5000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      5500,
+      5500,
+      12000,
+      12000,
+      11040,
+      11040,
+      11040,
+      11276,
+      11276,
+      11276,
+      11276,
+      11276,
+      11276,
+      10373,
+      10373,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000
+    ],
+    "agent_offers_history": [
+      8000,
+      8000,
+      5000,
+      5000,
+      8000,
+      8000,
+      8000,
+      8000,
+      8000,
+      7000,
+      7000,
+      7000,
+      7500,
+      7500,
+      6000,
+      6200,
+      25000,
+      25000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      5500,
+      25000,
+      12000,
+      11040,
+      11040,
+      11040,
+      10000,
+      11276,
+      25000,
+      25000,
+      25000,
+      11276,
+      11276,
+      10373,
+      6000,
+      6000,
+      6000,
+      15000,
+      2000,
+      15000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      6000,
+      6000,
+      2000,
+      2000,
+      6000
+    ]
+  }
+}

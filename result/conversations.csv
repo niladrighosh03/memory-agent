@@ -1,0 +1,131 @@
+conversation_id,turn_no,speaker,utterance
+1,1,User,"Hi, I just bought this car. Need insurance. [Vehicle Description: ]"
+1,2,Agent (Credibility),
+1,3,User (Request additional info),"Congrats — can you share the car’s make, model, variant, manufacture year, registration number (or chassis/engine no.), registration date and city of registration? Also confirm if you want comprehensive cover, your preferred deductible (you mentioned low — e.g., ₹1,000–₹5,000) and whether you have any no-claim bonus; do you prefer quotes via WhatsApp or email?"
+1,4,Agent (Personal),"Congrats on the new car — happy to help get it insured. A few quick details and preferences from you and I’ll prepare personalised quotes (I can send them via WhatsApp or email):
+
+What I need
+- Car make, model & variant (e.g., Maruti Swift VXi)
+- Manufacture year
+- Registration number (or chassis/engine number)
+- Registration date and city of registration
+- Is the car registered in your name? (Yes/No)
+
+Cover & preferences
+- Do you want comprehensive cover (recommended) or third‑party only?
+- Preferred deductible/excess — you mentioned “low” (e.g., ₹1,000–₹5,000). Which exact amount would you like?
+- Do you have any No Claim Bonus (NCB)? If yes, what % and do you have the previous policy document?
+
+Add‑ons (pick any you want included)
+- Zero depreciation (engineered for new/expensive parts)
+- Roadside assistance / breakdown support
+- Consumables cover (oil, nuts/bolts after claim)
+- Tire protection
+- Engine protection / hydrostatic lock
+- Return to invoice
+
+Other useful info
+- Will the car be used personally or for commercial/ride‑sharing?
+- Any anti‑theft device fitted?
+- Preferred contact to receive quotes: WhatsApp number or email?
+
+About the insurer I’ll quote from
+I can provide quotes from Digit Insurance — they do fully online policies, paperless issuance, smartphone-based claim inspections, and useful add‑ons like tire protection, consumables cover and roadside support.
+
+Next step
+Share the details above and your preferred contact method. I’ll prepare 2–3 tailored options (different IDVs/deductibles/add‑ons) and send them over so you can pick and buy online right away."
+1,5,User (Express Concern),"I'm worried a low deductible will push my premium up too much — roughly how much extra would I pay for a ₹2,000 deductible versus ₹5,000?"
+1,6,Agent (Logical),
+1,7,User (Negotiate price),"If a ₹2,000 deductible raises my annual premium by about ₹2,000–₹4,000, can you negotiate a discount (aim for ~₹1,000–₹1,500 off) or include one add‑on (zero‑dep or roadside) so my cost stays close to the ₹5,000 option? Send the quotes via WhatsApp."
+1,8,Agent (Emotional),
+1,9,User (Express Concern),"I'm concerned the ₹2,000 deductible will push my premium too high — please try to negotiate a ~₹1,000–₹1,500 discount or include zero‑dep/roadside so the total stays close to the ₹5,000 option; send the quotes to my WhatsApp."
+1,10,Agent (Personal),
+1,11,User (Negotiate price),"I’m worried a ₹2,000 deductible will push my premium too high — please negotiate for a ~₹1,000–₹1,500 discount or include one add‑on (zero‑dep or roadside) so the total stays close to the ₹5,000 option, and send the revised quotes to my WhatsApp."
+1,12,Agent (Default),
+1,13,User (Express Concern),"I’m concerned the ₹2,000 deductible — which raises my premium by about ₹2,000–₹4,000 — will push my total well above my ₹5,000 target. Please negotiate a ~₹1,000–₹1,500 discount or include zero‑dep/roadside and send the revised quotes to my WhatsApp."
+1,14,Agent (Personal),
+1,15,User (Negotiate price),"Please negotiate with the insurer for a ₹1,000–₹1,500 discount or include either zero‑dep or roadside assistance so the final premium stays close to ₹5,000, and send the revised quotes to my WhatsApp."
+1,16,Agent (Personal),
+1,17,User (Express Concern),"I’m worried the ₹2,000 deductible — which seems to add about ₹2,000–₹4,000 to the premium — will push the total well above my ₹5,000 target. Please negotiate a ₹1,000–₹1,500 discount or include zero‑dep/roadside and send the revised quotes to my WhatsApp."
+1,18,Agent (Logical),
+1,19,User (Negotiate price),"I’m worried the ₹2,000 deductible (which seems to add ~₹2,000–₹4,000) will push my premium over my ₹5,000 target — please negotiate a ₹1,000–₹1,500 discount with the insurer or include zero‑dep/roadside assistance so the final premium stays near ₹5,000, and send the revised quotes to my WhatsApp."
+1,20,Agent (Personal),
+1,21,User (Reject Offer),"Thanks — I can’t accept this as it’s over my ₹5,000 budget. Please don’t proceed unless you can get it down by ₹1,000–₹1,500 or include zero‑dep/roadside to keep it near ₹5,000."
+1,22,Agent (Default),"Understood, have a good day."
+2,1,User,Can you help me insure my new vehicle? [Vehicle Description: ]
+2,2,Agent (Emotional),
+2,3,User (Ask Coverage Details),"Sure — could you share the vehicle make, model, year, registration city and fuel type, plus engine CC/odometer and whether you want comprehensive or third‑party cover? Also tell me if you’re willing to take a moderate voluntary excess and which add‑ons (zero‑dep, roadside, engine protection) you want so I can send quotes via WhatsApp."
+2,4,Agent (Credibility),"Great — I can get you quick WhatsApp quotes. To prepare accurate options (including Liberty General’s budget-friendly comprehensive cover), please send the following details:
+
+1. Vehicle make & model (e.g., Maruti Swift VXi)  
+2. Year of manufacture  
+3. Registration city / RTO  
+4. Fuel type (Petrol / Diesel / CNG / EV)  
+5. Engine CC and current odometer (km)  
+6. Cover wanted: Comprehensive or Third‑Party  
+7. Willing to take a moderate voluntary excess? (Yes / No) — moderate typically means around ₹2,000–₹5,000 and usually lowers the premium.  
+8. Add‑ons required: Zero‑depreciation, Roadside assistance, Engine protection (tick which ones you want)  
+9. Is the vehicle new (never insured) or previously insured? If previously, share current insurer, policy expiry date and NCB % (if known) and any claim history in last 3 years.  
+10. WhatsApp number to send quotes (please include +91) and best time to message.
+
+Once you send these, I’ll prepare 2–3 quote options and WhatsApp them to you within about 20–30 minutes. If you prefer email or SMS instead, tell me and I’ll use that."
+2,5,User (Request quote),"Hyundai i20 Asta (2022), Bengaluru RTO, Petrol, 1197 cc, 12,000 km — comprehensive cover, willing to take a ₹3,000 voluntary excess; add‑ons: zero‑dep + roadside (no engine protection). Previously insured with ICICI Lombard, policy expiry 31-03-2026, NCB 20%, no claims last 3 years; WhatsApp +91 9876543210 after 6pm — please send 2–3 quotes."
+2,6,Agent (Logical),
+2,7,User (Ask Coverage Details),Thanks — I’ll send 2–3 WhatsApp quotes after 6pm. Quick check: please share the vehicle registration number and confirm if the car is under loan/finance (and your DOB/age) so I can finalise the premium.
+2,8,Agent (Persona),"Thanks — got the details. Before I finalise the premiums, please share just these three quick items:
+
+1. Vehicle registration number (e.g., KA01AB1234)  
+2. Is the car under loan/finance? If yes, lender name (or “No”)  
+3. Your DOB (DD/MM/YYYY) or age
+
+I’ll prepare 2–3 WhatsApp quotes (including a budget-friendly Liberty General comprehensive option) and send them to +91 9876543210 after 6:00 pm — you’ll get them within ~20–30 minutes of that time. Confirm and I’ll proceed."
+2,9,User (Request additional info),"Can you share an approx premium range for the 2–3 comprehensive options (with the ₹3,000 voluntary excess + zero‑dep & roadside)? Also tell me what documents you’ll need to finalize the purchase."
+2,10,Agent (Logical),
+2,11,User (Negotiate price),"Can you do better on price? Given my 20% NCB, 3 years claim‑free and willingness to take ₹3,000 voluntary excess, can you offer a discount — say around ₹1,500–2,000 off or any loyalty perk?"
+2,12,Agent (Personal),
+2,13,User (Express Concern),"I’m concerned that’s still above my budget — can you try to reduce the premium by about ₹1,500–2,000 or throw in a loyalty perk? I’m on a tight budget and will keep the ₹3,000 voluntary excess."
+2,14,Agent (Credibility),
+2,15,User (Negotiate price),"I’m on a tight budget — with my 20% NCB, 3 claim‑free years and ₹3,000 voluntary excess, can you cut the premium by ₹1,500–2,000 or add a loyalty perk (e.g., free 1‑yr add‑on/waived fees) to bring it within my budget?"
+2,16,Agent (Default),
+2,17,User (Express Concern),"I’m really concerned — even with 20% NCB, 3 claim‑free years and a ₹3,000 voluntary excess this is still over my budget; can you cut ₹1,500–2,000 or add a loyalty perk (like a free 1‑yr add‑on/waived fees)?"
+2,18,Agent (Emotional),
+2,19,User (Request additional info),"I can try—please share your current quoted premium (₹), vehicle make/model & year, registration city, which loyalty perk you prefer (free 1‑yr add‑on or waived fees), policy start date, and best WhatsApp number to send a revised quote."
+2,20,Agent (Personal),"I completely understand — let’s see what I can do to get this within your budget.
+
+I can try two approaches: reduce the premium by about ₹1,500–2,000 (subject to underwriting) or add a loyalty perk (common options: free 1‑yr add‑on like Roadside Assistance / Key Replacement / Zero Dep* or waive policy/processing fees). Zero‑dep is usually possible only for newer cars (vehicle age limits apply), while roadside/key assist are easier to add.
+
+Please share these details so I can run a quick revised quote and message it to you on WhatsApp:
+- Current quoted premium (₹)
+- Vehicle make, model & year
+- Registration city
+- Which loyalty perk do you prefer — free 1‑yr add‑on (tell me which: Roadside Assistance, Key Replacement, Zero Dep) OR waived fees?
+- Policy start date
+- Best WhatsApp number to send the revised quote
+
+Also tell me if any add‑ons are already included in the quote. I’ll review and get back with the best possible option."
+2,21,User (Express Concern),"I’m really worried — even with 20% NCB, 3 claim‑free years and a ₹3,000 voluntary excess this premium is still over my budget; can you cut ₹1,500–2,000 or add a loyalty perk to bring it down?"
+2,22,Agent (Personal),
+2,23,User (Confirm Plan),"Got it — I’ll aim for a ₹1,500 premium reduction and run a revised quote. Please confirm your current quoted premium, vehicle make/model & year, registration city, policy start date and best WhatsApp number so I can send the update."
+2,24,Agent (Default),"Great, I'll process that right away."
+3,1,User,Looking for a quote for my new car. [Vehicle Description: A metallic blue Hyundai Creta SUV in very good condition.]
+3,2,Agent (Emotional),
+3,3,User (Ask Coverage Details),"Please send quotes (in ₹) for comprehensive and third‑party policies for my Hyundai Creta with voluntary deductibles of ₹5,000 and ₹10,000, including IDV, premium breakdown, and nearby cashless garages — send details via WhatsApp or SMS only."
+3,4,Agent (Persona),
+3,5,User (Express Concern),"Concerned about hidden charges and marketing calls — please send final premiums in ₹ (including GST and any fees) for both ₹5,000 and ₹10,000 deductibles, and confirm you’ll contact me only via WhatsApp/SMS."
+3,6,Agent (Default),
+3,7,User (Ask Coverage Details),"To prepare accurate ₹ quotes (IDV, premium breakdown, cashless garages) please confirm your Creta’s exact variant & fuel type, registration year and RTO city, current policy expiry and NCB%, and whether you want add‑ons (zero‑dep, roadside, engine/IC cover) or only base cover. Please also share the WhatsApp/SMS number to send details and confirm you don’t want marketing calls."
+3,8,Agent (Credibility),
+3,9,User (Express Concern),"Concerned about privacy and hidden charges — before I share vehicle/details, confirm final premiums in ₹ (including GST/fees) for both ₹5,000 and ₹10,000 deductibles and that you’ll contact me only via WhatsApp/SMS, no marketing calls; otherwise I won't proceed."
+3,10,Agent (Credibility),
+3,11,User (Negotiate price),"I'll only proceed if you send final all‑in premiums in ₹ (GST & fees included) for ₹5,000 and ₹10,000 deductibles and give me your best price — at least 10% off or ₹1,500 reduction; confirm you'll contact only via WhatsApp/SMS and no marketing calls."
+3,12,Agent (Persona),
+3,13,User (Express Concern),"I'm concerned about privacy and hidden charges — before I share vehicle/details, send final all‑in premiums in ₹ (GST & fees included) for ₹5,000 and ₹10,000 deductibles with your best price (min 10% off or ₹1,500 reduction). Also confirm you'll contact me only via WhatsApp/SMS and there will be no marketing calls, otherwise I won't proceed."
+3,14,Agent (Default),
+3,15,User (Negotiate price),"Send final all‑in premiums in ₹ (GST/fees included) for ₹5,000 and ₹10,000 deductibles with your best price — I need at least 10% off or ₹1,500 off; confirm you’ll contact only via WhatsApp/SMS and no marketing calls, or I won’t proceed."
+3,16,Agent (Logical),
+3,17,User (Express Concern),"I’m worried about hidden charges and marketing calls — send final all‑in premiums in ₹ (GST & fees included) for ₹5,000 and ₹10,000 deductibles with your best price (at least 10% off or ₹1,500 off) and confirm you’ll contact only via WhatsApp/SMS, or I won’t proceed."
+3,18,Agent (Personal),
+3,19,User (Negotiate price),"Send your best final all‑in premiums (GST & fees included) for ₹5,000 and ₹10,000 deductibles — they must include at least 10% off or a minimum ₹1,500 reduction, and confirm you’ll contact me only via WhatsApp/SMS (no marketing calls) or I won’t proceed."
+3,20,Agent (Default),
+3,21,User (Confirm Plan),"I accept the plan at ₹30,457 (all‑in, GST & fees included). Please contact me only via WhatsApp or SMS — no marketing calls."
+3,22,Agent (Default),"Great, I'll process that right away."

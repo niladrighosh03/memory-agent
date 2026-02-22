@@ -1,0 +1,120 @@
+{
+  "persona_id": "P_003",
+  "life_events": {
+    "events": []
+  },
+  "sessions": [
+    {
+      "persona_id": "P_003",
+      "year": 2015,
+      "avg_intent_vector": {
+        "information_seeking": 0.7375,
+        "price_sensitivity": 0.49375,
+        "trust_level": 0.2375,
+        "decision_readiness": 0.375,
+        "emotional_valence": 0.375
+      },
+      "avg_strategy_vector": {
+        "credibility": 0.5533333333333333,
+        "emotional_appeal": 0.42,
+        "logical_argument": 0.6466666666666666,
+        "personalization": 0.56
+      },
+      "final_outcome": "Accept",
+      "trust_estimate": 0.2375,
+      "price_sensitivity_estimate": 0.49375,
+      "decision_readiness_end": 1.0,
+      "negotiation_moves": [
+        {
+          "user_request": 9000,
+          "agent_offer": 3000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        },
+        {
+          "user_request": 9000,
+          "agent_offer": 9000
+        }
+      ]
+    }
+  ],
+  "strategy_memory": {
+    "stats": {
+      "Emotional": {
+        "success_count": 2,
+        "total_uses": 2,
+        "total_delta_readiness": 0.3
+      },
+      "Logical": {
+        "success_count": 4,
+        "total_uses": 6,
+        "total_delta_readiness": 0.19999999999999996
+      },
+      "Credibility": {
+        "success_count": 1,
+        "total_uses": 1,
+        "total_delta_readiness": 0.0
+      }
+    }
+  },
+  "latent_state": {
+    "trust": 0.47375,
+    "price_sensitivity": 0.499375,
+    "commitment": 1.0,
+    "logical_resp": 0.5025745,
+    "emotional_resp": 0.55,
+    "credibility_resp": 0.5,
+    "concession_expectation": 0.5
+  },
+  "concession_memory": {
+    "negotiation_graph": {
+      "initial_price": 0,
+      "user_request": 9000,
+      "agent_offer": 9000,
+      "user_final_request": 0
+    },
+    "user_requests_history": [
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000
+    ],
+    "agent_offers_history": [
+      1000,
+      3000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000,
+      9000
+    ]
+  }
+}

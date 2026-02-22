@@ -1,0 +1,131 @@
+conversation_id,turn_no,agent_name,thinking
+1,2,Engagement Expert,"Use a warm, congratulatory tone to build rapport, briefly acknowledge the new purchase, and immediately request the vehicle details and coverage needs to keep momentum."
+1,2,Intent Expert,Request quote.
+1,2,Keyterm Expert,
+1,2,Knowledge Expert,
+1,2,Orchestrator,"Congratulations on your new vehicle — to get you a prompt quote, please share the vehicle make, model, year (or VIN) and the coverage limits/deductibles you'd like."
+1,4,Engagement Expert,"Use a warm, congratulatory and concise tone that builds rapport by clearly requesting the listed vehicle and insurance details, confirming coverage/deductible/NCB preferences, and promising a prompt follow-up via the user's preferred channel."
+1,4,Intent Expert,Request quote.
+1,4,Keyterm Expert,
+1,4,Orchestrator,
+1,6,Sentiment Expert,
+1,6,Engagement Expert,
+1,6,Intent Expert,Request quote.
+1,6,Orchestrator,
+1,8,Sentiment Expert,"Pragmatic and cost‑conscious with a polite, negotiation‑focused stance — respond cooperatively and solution‑oriented by offering concrete discount/add‑on options and confirming WhatsApp delivery logistics."
+1,8,Engagement Expert,
+1,8,Intent Expert,Negotiate price.
+1,8,Knowledge Expert,"Use knowledge of how deductible changes affect motor insurance premiums, Digit General Insurance’s available add‑ons and discount/negotiation practices, and rules for sending quotes via WhatsApp."
+1,8,Orchestrator,
+1,10,Sentiment Expert,
+1,10,Engagement Expert,
+1,10,Intent Expert,Negotiate price.
+1,10,Orchestrator,"Maintain a positive, responsive tone to keep engagement, acknowledge their position, and present a concise, value-focused counteroffer (with alternatives and a clear deadline) to drive the price negotiation."
+1,12,Sentiment Expert,"Anxious and price‑sensitive; respond with empathy, prioritize negotiating a ₹1,000–₹1,500 discount or adding a zero‑dep/roadside add‑on to match the ₹5,000 option, and confirm you'll send the revised quotes via WhatsApp."
+1,12,Engagement Expert,"Be empathetic and proactive—acknowledge their cost concern, then promise a quick (within 24 hours) follow-up with negotiated quotes and WhatsApp delivery."
+1,12,Intent Expert,Negotiate price.
+1,12,Orchestrator,"Acknowledge their price anxiety, empathize, and within 24 hours negotiate to obtain a ₹1,000–₹1,500 discount or include a zero‑depreciation/roadside add‑on to match the ₹5,000 option, then send revised quotes via WhatsApp."
+1,14,Sentiment Expert,
+1,14,Engagement Expert,
+1,14,Intent Expert,Negotiate price.
+1,14,Orchestrator,"Adopt an empathetic, engagement-focused approach—build rapport, emphasize value, ask targeted questions to uncover priorities, and use calibrated concessions to negotiate the price."
+1,16,Sentiment Expert,
+1,16,Engagement Expert,"Use a polite, confident tone that acknowledges their budget to build rapport, and deliver revised quotes promptly (within 24 hours)."
+1,16,Intent Expert,Negotiate price.
+1,16,Orchestrator,
+1,18,Sentiment Expert,
+1,18,Engagement Expert,
+1,18,Intent Expert,Negotiate price.
+1,18,Orchestrator,
+1,20,Sentiment Expert,
+1,20,Engagement Expert,
+1,20,Intent Expert,Negotiate price.
+1,20,Orchestrator,"Maintain a respectful, engaging tone to build rapport and focus the conversation on value-based concessions and clear trade-offs to drive a favorable price negotiation."
+2,2,Intent Expert,Request quote.
+2,2,Knowledge Expert,
+2,2,Keyterm Expert,"Emphasize the vehicle’s current market value and age, safety and anti-theft features, typical annual mileage and primary use, driver history and garaging location, and the coverage types you want (liability, collision, comprehensive, and any gap/loan/lease protection)."
+2,2,Sentiment Expert,
+2,2,Orchestrator,
+2,4,Sentiment Expert,
+2,4,Engagement Expert,"Use a friendly, professional tone, acknowledge convenience and preferences to build rapport, and send the WhatsApp quotes promptly with a clear ETA."
+2,4,Intent Expert,Request info.
+2,4,Keyterm Expert,
+2,4,Orchestrator,"Use a friendly, professional tone that acknowledges the customer's convenience and preferences, request the necessary details, and promptly send the WhatsApp quotes with a clear ETA."
+2,6,Sentiment Expert,"Pragmatic and businesslike — respond with 2–3 clear, concise insurance quote options (premium, cover details, voluntary excess impact, add‑ons included) and offer to follow up via WhatsApp after 6pm."
+2,6,Engagement Expert,
+2,6,Intent Expert,Request quote
+2,6,Keyterm Expert,
+2,6,Orchestrator,"Provide 2–3 pragmatic, businesslike insurance quote options—each showing premium, cover details/limits and what's included, the impact of different voluntary excess levels, and any add‑ons included—and offer to follow up via WhatsApp after 6pm."
+2,8,Engagement Expert,"Adopt a polite, concise, trust-building tone by clearly requesting the vehicle registration, loan/finance status and DOB, and send the WhatsApp quotes after 6pm as requested."
+2,8,Intent Expert,Request info.
+2,8,Orchestrator,"Politely and concisely request the customer's vehicle registration, loan/finance status, and DOB, and send the WhatsApp quotes after 6pm to build trust."
+2,10,Engagement Expert,"Use a prompt, professional and friendly tone—give concise premium estimates and a clear documents checklist, reassure the user, and invite quick clarifications."
+2,10,Intent Expert,Request quote.
+2,10,Orchestrator,"Request a quote using a prompt, professional, friendly tone that delivers concise premium estimates and a clear documents checklist, reassures the user, and invites quick clarifications."
+2,12,Sentiment Expert,
+2,12,Engagement Expert,"Acknowledge their loyalty and concessions, reply promptly in a friendly, confident tone, and present a clear counteroffer or alternative loyalty perk to build rapport."
+2,12,Intent Expert,Negotiate price.
+2,12,Knowledge Expert,
+2,12,Orchestrator,"Promptly and warmly acknowledge their loyalty and past concessions, then confidently present a clear price-focused counteroffer or alternative loyalty perk to negotiate while preserving rapport."
+2,14,Sentiment Expert,
+2,14,Engagement Expert,
+2,14,Intent Expert,Negotiate price.
+2,14,Orchestrator,
+2,16,Engagement Expert,
+2,16,Intent Expert,Negotiate price.
+2,16,Orchestrator,"Build rapport and uncover the buyer's needs with open questions, then leverage that insight to negotiate price by emphasizing value, anchoring strategically, and trading calibrated concessions."
+2,18,Sentiment Expert,
+2,18,Engagement Expert,"Respond promptly and empathetically, validate their claim‑free history to build rapport, then offer clear, limited options (small premium reduction or a loyalty perk) and ask to check eligibility."
+2,18,Intent Expert,Negotiate price.
+2,18,Orchestrator,"Respond promptly and empathetically, validate their claim‑free history to build rapport, then negotiate price by offering a clear choice between a modest premium reduction or a loyalty perk and ask permission to check eligibility."
+2,20,Engagement Expert,
+2,20,Intent Expert,
+2,20,Orchestrator,
+2,22,Sentiment Expert,
+2,22,Engagement Expert,"Use an empathetic, reassuring tone, validate their budget stress to build rapport, and respond promptly with concrete cost-saving options and a clear loyalty perk proposal."
+2,22,Intent Expert,Negotiate price.
+2,22,Orchestrator,"Promptly acknowledge and validate their budget stress with an empathetic, reassuring tone, then negotiate price by offering concrete cost‑saving options and a clear loyalty perk proposal."
+3,2,Engagement Expert,
+3,2,Intent Expert,Request quote.
+3,2,Keyterm Expert,
+3,2,Knowledge Expert,
+3,2,Orchestrator,"Ask the requester for specific project details—scope, deliverables, timeline, budget, and any constraints—so you can provide a clear, tailored quote."
+3,4,Engagement Expert,
+3,4,Intent Expert,Request quote.
+3,4,Knowledge Expert,
+3,4,Orchestrator,"Ask concise clarifying questions about scope, timeline, deliverables, and budget so you can provide a clear, tailored quote with pricing options and next steps."
+3,6,Sentiment Expert,
+3,6,Engagement Expert,
+3,6,Intent Expert,Request quote.
+3,6,Orchestrator,
+3,8,Engagement Expert,
+3,8,Intent Expert,Request quote.
+3,8,Keyterm Expert,
+3,8,Knowledge Expert,
+3,8,Orchestrator,
+3,10,Sentiment Expert,
+3,10,Engagement Expert,
+3,10,Intent Expert,Request quote.
+3,10,Knowledge Expert,
+3,10,Orchestrator,
+3,12,Engagement Expert,"Use a concise, professional and reassuring tone, emphasize transparent pricing to build trust, and promise quick WhatsApp/SMS follow-up during business hours while honoring the no-calls preference."
+3,12,Intent Expert,
+3,12,Knowledge Expert,
+3,12,Orchestrator,"Use a concise, professional, and reassuring tone to present transparent pricing that builds trust and promise prompt WhatsApp/SMS follow-up during business hours while strictly honoring the customer's no-calls preference."
+3,14,Sentiment Expert,
+3,14,Engagement Expert,
+3,14,Intent Expert,
+3,14,Knowledge Expert,
+3,14,Orchestrator,
+3,16,Engagement Expert,
+3,16,Intent Expert,
+3,16,Knowledge Expert,
+3,16,Orchestrator,
+3,18,Sentiment Expert,"Anxious and distrustful with a firm, conditional stance—reply with transparent, all‑inclusive premiums for the ₹5,000 and ₹10,000 deductibles, confirm the requested discount (≥10% or ₹1,500 off) and promise contact only via WhatsApp/SMS."
+3,18,Engagement Expert,"Use a prompt, transparent, and reassuring tone: provide clear all‑in ₹ premiums for both ₹5,000 and ₹10,000 deductibles showing GST/fees and the requested discount, and explicitly confirm contact only via WhatsApp/SMS to build trust."
+3,18,Intent Expert,
+3,18,Knowledge Expert,
+3,18,Orchestrator,
+3,20,Engagement Expert,"Respond promptly with a concise, respectful message that immediately confirms the required discounts and WhatsApp/SMS‑only contact to build trust and maintain momentum."
+3,20,Intent Expert,
+3,20,Orchestrator,"Respond promptly with a concise, respectful confirmation of the required discounts and that communication will be via WhatsApp/SMS only to build trust and maintain momentum."
