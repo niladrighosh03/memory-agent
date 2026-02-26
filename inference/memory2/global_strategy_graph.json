@@ -1,0 +1,102 @@
+{
+  "weights": {
+    "Default": {
+      "Credibility": 0.26250993254627897,
+      "Logical": 0.24906132887433896,
+      "Personal": 0.24402992239293642,
+      "Emotional": 0.14958665573603772,
+      "Persona": 0.049784435286178846,
+      "Default": 0.04502772516422911
+    },
+    "Credibility": {
+      "Logical": 0.3088603753514143,
+      "Personal": 0.25712992205609564,
+      "Emotional": 0.20954792265071812,
+      "Default": 0.14081072527267385,
+      "Persona": 0.04399973557280371,
+      "Credibility": 0.0396513190962944
+    },
+    "Emotional": {
+      "Personal": 0.31484072518376766,
+      "Logical": 0.25387210331112015,
+      "Credibility": 0.1949971663336862,
+      "Default": 0.14811007947570193,
+      "Persona": 0.04639819943036883,
+      "Emotional": 0.041781726265355354
+    },
+    "Logical": {
+      "Personal": 0.3150275628218055,
+      "Credibility": 0.2521255612857462,
+      "Emotional": 0.19524425213416197,
+      "Default": 0.15334747118222028,
+      "Persona": 0.044505946139773184,
+      "Logical": 0.03974920643629284
+    },
+    "Personal": {
+      "Emotional": 0.2895152821554234,
+      "Logical": 0.23139926108762596,
+      "Credibility": 0.2356607677860437,
+      "Default": 0.13792781595763023,
+      "Persona": 0.06758724476798257,
+      "Personal": 0.03790962824529425
+    },
+    "Persona": {
+      "Credibility": 0.2971592516700453,
+      "Personal": 0.25667612480818813,
+      "Emotional": 0.20155179697740888,
+      "Logical": 0.14377513990970667,
+      "Default": 0.0529126399980821,
+      "Persona": 0.047925046636568866
+    }
+  },
+  "update_counts": {
+    "Default->Default": 0,
+    "Default->Credibility": 9,
+    "Default->Emotional": 3,
+    "Default->Logical": 5,
+    "Default->Personal": 4,
+    "Default->Persona": 1,
+    "Credibility->Default": 5,
+    "Credibility->Credibility": 0,
+    "Credibility->Emotional": 11,
+    "Credibility->Logical": 18,
+    "Credibility->Personal": 14,
+    "Credibility->Persona": 1,
+    "Emotional->Default": 5,
+    "Emotional->Credibility": 6,
+    "Emotional->Emotional": 0,
+    "Emotional->Logical": 11,
+    "Emotional->Personal": 15,
+    "Emotional->Persona": 1,
+    "Logical->Default": 8,
+    "Logical->Credibility": 12,
+    "Logical->Emotional": 8,
+    "Logical->Logical": 0,
+    "Logical->Personal": 18,
+    "Logical->Persona": 1,
+    "Personal->Default": 6,
+    "Personal->Credibility": 19,
+    "Personal->Emotional": 15,
+    "Personal->Logical": 10,
+    "Personal->Personal": 0,
+    "Personal->Persona": 7,
+    "Persona->Default": 1,
+    "Persona->Credibility": 2,
+    "Persona->Emotional": 2,
+    "Persona->Logical": 0,
+    "Persona->Personal": 5,
+    "Persona->Persona": 0
+  },
+  "nodes": [
+    "Default",
+    "Credibility",
+    "Emotional",
+    "Logical",
+    "Personal",
+    "Persona"
+  ],
+  "metadata": {
+    "total_updates": 223,
+    "last_updated": "2026-02-19 01:42:07.416559"
+  }
+}
