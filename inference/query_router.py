@@ -1,17 +1,33 @@
 """
-query_router.py  (keyword / rule-based — no OpenAI call)
----------------------------------------------------------
-Classifies a user query entirely using keyword matching to determine:
-  - which node types to traverse  (session, latent, strategy, concession)
-  - which year range to target    (latest, all_years, earliest, or a specific YYYY)
+query_router.py  (LLM-based semantic router)
+--------------------------------------------
+Uses Azure OpenAI to understand the semantic intent of ANY user query
+and decide which memory nodes to traverse.
 
-Returns a QueryRoute object consumed by the LangGraph pipeline.
-No API key or network call is needed here.
+Key difference from keyword approach:
+  - The LLM receives the persona's memory SUMMARY as context
+  - It understands domain intent (e.g. "I want to buy insurance" →
+    needs strategy + latent + concession to handle a live negotiation)
+  - Returns structured JSON with node_types and year_range
 """
 
+import json
+import os
 import re
 from dataclasses import dataclass, field
-from typing import List, Set
+from typing import List
+
+from dotenv import load_dotenv
+from openai import AzureOpenAI
+
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "memory2", ".env"))
+
+_client = AzureOpenAI(
+    api_key        = os.getenv("AZURE_OPENAI_API_KEY"),
+    api_version    = os.getenv("AZURE_OPENAI_API_VERSION"),
+    azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT"),
+)
+AZURE_MODEL = os.getenv("AZURE_MODEL", "gpt-4.1")
 
 
 # ---------------------------------------------------------------------------
@@ -20,109 +36,74 @@ from typing import List, Set
 
 @dataclass
 class QueryRoute:
-    node_types:        List[str]        # which node types to visit
-    year_range:        str              # "latest" | "all_years" | "earliest" | "YYYY"
-    reasoning:         str = ""         # human-readable explanation
-    nodes_to_traverse: List[str] = field(default_factory=list)  # concrete node IDs
+    node_types:        List[str]
+    year_range:        str          # "latest" | "all_years" | "earliest" | "YYYY"
+    reasoning:         str = ""
+    nodes_to_traverse: List[str] = field(default_factory=list)
 
 
 # ---------------------------------------------------------------------------
-# Keyword rule tables
+# System prompt — includes memory schema knowledge
 # ---------------------------------------------------------------------------
 
-# Maps each node type to a list of trigger keywords / phrases
-_NODE_TYPE_KEYWORDS: dict[str, list[str]] = {
-    "latent": [
-        "trust", "commitment", "price sensitivity", "emotional response",
-        "logical response", "credibility response", "concession expectation",
-        "psychological", "latent", "internal state", "persuasion state",
-        "belief", "attitude",
-    ],
-    "strategy": [
-        "strategy", "strategies", "tactic", "approach", "persuasion",
-        "logical", "emotional", "credibility", "personali", "technique",
-        "method", "best strategy", "what strategy", "which strategy",
-        "how to convince", "how to persuade", "delta readiness",
-        "success rate", "strategy change", "strategy shift",
-    ],
-    "concession": [
-        "concession", "offer", "counter offer", "price", "request",
-        "negotiation", "deal", "amount", "final offer", "user request",
-        "agent offer", "payment", "quote", "acceptance", "reject",
-        "outcome", "history", "pattern",
-    ],
-    "session": [
-        "session", "year", "conversation", "interaction", "meeting",
-        "negotiation round", "intent", "decision readiness", "outcome",
-        "information seeking", "emotional valence",
-    ],
+SYSTEM_PROMPT = """
+You are the routing brain of a memory-aware negotiation AI agent.
+
+The agent stores a persona's negotiation history as a graph with these node types:
+
+  session     → Per-year conversation summary: intent vectors (trust, price_sensitivity,
+                decision_readiness, emotional_valence, information_seeking), negotiation moves
+                (user_request, agent_offer), and final_outcome (Accept/Reject).
+
+  latent      → Current latent psychological state: trust, commitment, price_sensitivity,
+                decision_readiness_end, emotional_valence_end. Reflects WHO the person is RIGHT NOW.
+
+  strategy    → Per-year usage of persuasion strategies: credibility, emotional_appeal,
+                logical_argument, personalization scores.
+
+  strategy_agg → Lifetime aggregated strategy stats: which strategy had highest success rate,
+                 delta_readiness impact per strategy.
+
+  concession  → Per-year price negotiation history: what the user requested, what the agent
+                offered, and the final outcome.
+
+  concession_agg → Aggregated: average prices, acceptance rate, typical concession range.
+
+Given a user query (which may be a negotiation utterance, a question, or an intent),
+you must output ONLY a JSON object with these EXACT keys:
+
+{
+  "node_types": ["session" | "latent" | "strategy" | "concession" | "all"],
+  "year_range": "latest" | "all_years" | "earliest" | "<YYYY>",
+  "reasoning":  "<one sentence explaining why these nodes are needed>"
 }
 
-# If the query contains any of these, override to "all_years"
-_ALL_YEARS_KEYWORDS = [
-    "over the years", "across the years", "all years", "history",
-    "changed", "change", "evolution", "trend", "growth", "progression",
-    "from 2015", "since 2015", "over time", "year by year", "compare",
-    "comparison", "each year", "every year",
-]
+Rules for node_type selection:
+  - Negotiation utterances (buying intent, price questions, offers, counter-offers):
+    → ["latent", "strategy", "concession"]  — need current state + best approach + price history
+  - Questions about trust, commitment, psychological state, readiness:
+    → ["latent"]
+  - Questions about past prices, offers, acceptance/rejection history:
+    → ["concession"]
+  - Questions about what strategy worked, persuasion approach, tactics:
+    → ["strategy"]
+  - Questions about past conversations, what happened in a year:
+    → ["session"]
+  - Broad questions about evolution, trends, comparisons across years:
+    → ["all"]  and year_range: "all_years"
 
-# Override to "latest" / "earliest"
-_LATEST_KEYWORDS  = ["current", "latest", "now", "today", "recent", "right now", "best strategy"]
-_EARLIEST_KEYWORDS = ["first", "initial", "earliest", "oldest", "start", "beginning", "2015"]
+Rules for year_range:
+  - "latest"    — current/live negotiation session queries
+  - "all_years" — history, trends, comparisons
+  - "earliest"  — specifically about first/2015 interactions
+  - "YYYY"      — explicit year mentioned in query
 
-
-# ---------------------------------------------------------------------------
-# Core routing logic
-# ---------------------------------------------------------------------------
-
-def _match_node_types(query_lower: str) -> Set[str]:
-    """Return the set of node types whose keywords appear in the query."""
-    matched: Set[str] = set()
-    for node_type, keywords in _NODE_TYPE_KEYWORDS.items():
-        for kw in keywords:
-            if kw.lower() in query_lower:
-                matched.add(node_type)
-                break
-    # Default: if nothing matched, visit everything
-    return matched if matched else {"session", "latent", "strategy", "concession"}
-
-
-def _match_year_range(query_lower: str, available_years: List[int]) -> str:
-    """Return year range string from the query."""
-    # Check for explicit 4-digit year mention
-    found_years = re.findall(r"\b(20\d{2})\b", query_lower)
-    if found_years:
-        yr = int(found_years[0])
-        if yr in available_years:
-            return str(yr)
-
-    # Check multi-year keywords (check before latest/earliest)
-    for kw in _ALL_YEARS_KEYWORDS:
-        if kw in query_lower:
-            return "all_years"
-
-    # Check for latest
-    for kw in _LATEST_KEYWORDS:
-        if kw in query_lower:
-            return "latest"
-
-    # Check for earliest
-    for kw in _EARLIEST_KEYWORDS:
-        if kw in query_lower:
-            return "earliest"
-
-    # Default: latest
-    return "latest"
-
-
-def _build_reasoning(node_types: Set[str], year_range: str) -> str:
-    return (
-        f"Keyword match → node_types={sorted(node_types)}, year_range={year_range!r}"
-    )
+Output ONLY the JSON, no markdown, no extra text.
+""".strip()
 
 
 # ---------------------------------------------------------------------------
-# Public API
+# Router
 # ---------------------------------------------------------------------------
 
 def route_query(
@@ -130,61 +111,87 @@ def route_query(
     available_years: List[int],
     entry_year: int,
     earliest_year: int,
+    persona_summary: str = "",
 ) -> QueryRoute:
     """
-    Classify the query and resolve concrete node IDs to traverse.
-
-    No API calls — pure keyword matching.
+    Use Azure OpenAI to semantically route the query.
 
     Parameters
     ----------
-    query           : user's natural language question
-    available_years : sorted list of years in the graph
+    query           : user's natural language query / utterance
+    available_years : sorted list of years in the memory graph
     entry_year      : latest year (graph entry point)
     earliest_year   : first year (2015)
+    persona_summary : optional — the persona's memory summary for extra context
     """
-    q = query.lower()
+    user_content = f"User query: {query}"
+    if persona_summary:
+        user_content = f"Persona context: {persona_summary}\n\n{user_content}"
 
-    node_types = _match_node_types(q)
-    year_range = _match_year_range(q, available_years)
-    reasoning  = _build_reasoning(node_types, year_range)
+    try:
+        resp = _client.chat.completions.create(
+            model    = AZURE_MODEL,
+            messages = [
+                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user",   "content": user_content},
+            ],
+            max_tokens       = 200,
+            temperature      = 0.0,
+            response_format  = {"type": "json_object"},
+        )
+        raw    = resp.choices[0].message.content.strip()
+        parsed = json.loads(raw)
+    except Exception as e:
+        print(f"[router] LLM error: {e} — falling back to full traversal")
+        parsed = {"node_types": ["all"], "year_range": "all_years",
+                  "reasoning": f"LLM error: {e}"}
 
-    # Resolve target years
+    # ── Validate ────────────────────────────────────────────────────────────
+    VALID_TYPES = {"session", "latent", "strategy", "concession", "all"}
+    node_types  = [t for t in parsed.get("node_types", ["all"]) if t in VALID_TYPES]
+    if not node_types:
+        node_types = ["all"]
+
+    year_range = parsed.get("year_range", "latest")
+    reasoning  = parsed.get("reasoning", "")
+
+    # ── Resolve target years ────────────────────────────────────────────────
     if year_range == "latest":
         target_years = [entry_year]
     elif year_range == "earliest":
         target_years = [earliest_year]
     elif year_range == "all_years":
         target_years = available_years
-    elif year_range.isdigit() and int(year_range) in available_years:
+    elif re.match(r"^\d{4}$", year_range) and int(year_range) in available_years:
         target_years = [int(year_range)]
     else:
-        target_years = [entry_year]
+        target_years = [entry_year]   # safe fallback
 
-    # Build concrete node ID list
+    # ── Build concrete node IDs ─────────────────────────────────────────────
+    effective_types = {"session","latent","strategy","concession"} \
+                      if "all" in node_types else set(node_types)
+
     nodes_to_traverse: List[str] = []
     for year in target_years:
-        if "session" in node_types:
+        if "session"    in effective_types:
             nodes_to_traverse.append(f"session_{year}")
-        if "strategy" in node_types:
+        if "strategy"   in effective_types:
             nodes_to_traverse.append(f"strategy_{year}")
-        if "concession" in node_types:
+        if "concession" in effective_types:
             nodes_to_traverse.append(f"concession_{year}")
 
-    # Latent is attached to the latest year
-    if "latent" in node_types:
+    if "latent" in effective_types:
         nodes_to_traverse.append(f"latent_{entry_year}")
 
-    # Always include aggregated memory for full context
-    nodes_to_traverse.append(f"strategy_agg_{entry_year}")
-    nodes_to_traverse.append(f"concession_agg_{entry_year}")
+    # Always include aggregated summaries
+    nodes_to_traverse.extend([f"strategy_agg_{entry_year}", f"concession_agg_{entry_year}"])
 
-    # Deduplicate while preserving order
-    seen: Set[str] = set()
+    # Deduplicate preserving order
+    seen: set = set()
     nodes_to_traverse = [n for n in nodes_to_traverse if not (n in seen or seen.add(n))]
 
     return QueryRoute(
-        node_types        = sorted(node_types),
+        node_types        = node_types,
         year_range        = year_range,
         reasoning         = reasoning,
         nodes_to_traverse = nodes_to_traverse,
@@ -192,22 +199,23 @@ def route_query(
 
 
 # ---------------------------------------------------------------------------
-# Quick self-test
+# Self-test
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    sample_years = list(range(2015, 2026))
+    years = list(range(2015, 2026))
     queries = [
-        "What was the user's trust level in 2015?",
-        "How has the negotiation strategy changed over the years?",
+        "I want to buy the insurance",
+        "What price should I offer?",
+        "How has trust changed over the years?",
+        "What offer did the agent make in 2018?",
+        "Show me the full negotiation history",
         "What is the current best strategy to use?",
-        "Show me the concession pattern history",
-        "What is the latest latent state?",
-        "Compare prices from 2018",
+        "The user seems hesitant, what should I do?",
     ]
     for q in queries:
-        r = route_query(q, sample_years, 2025, 2015)
+        r = route_query(q, years, 2025, 2015)
         print(f"\nQuery   : {q}")
-        print(f"Types   : {r.node_types}  |  Year: {r.year_range}")
+        print(f"Types   : {r.node_types}   Year: {r.year_range}")
         print(f"Reason  : {r.reasoning}")
         print(f"Nodes   : {r.nodes_to_traverse}")
