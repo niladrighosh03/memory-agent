@@ -76,15 +76,24 @@ class GraphState(TypedDict):
 # ---------------------------------------------------------------------------
 
 def node_route_query(state: GraphState) -> GraphState:
-    """Classify the query and determine which memory nodes to visit."""
+    """Classify the query and determine which memory nodes to visit.
+    Passes the persona memory summary to the LLM router for richer context.
+    """
     query = state["query"]
     print(f"\n[route_query] Query: {query!r}")
 
+    # Pull persona summary for richer LLM routing context
+    persona_node    = MEMORY_GRAPH.get_node("persona")
+    persona_summary = ""
+    if persona_node and isinstance(persona_node.data, dict):
+        persona_summary = persona_node.data.get("summary", "")
+
     route = route_query(
-        query          = query,
+        query           = query,
         available_years = MEMORY_GRAPH.years,
         entry_year      = ENTRY_YEAR,
         earliest_year   = EARLIEST_YEAR,
+        persona_summary = persona_summary,
     )
 
     print(f"[route_query] node_types={route.node_types}  year_range={route.year_range}")
@@ -123,12 +132,14 @@ def node_traverse_graph(state: GraphState) -> GraphState:
     visited  = set()
     queue    = list(nodes_to_visit)       # start from pre-resolved nodes
     
-    # Add 'similar_to' anchor: if session_<latest> is in the visit list,
-    # also add session_<earliest> automatically (the similar_to edge target)
+    # Add 'similar_to' anchor dynamically: if entry node is visited, 
+    # we want to pull its similar_to neighbor automatically.
     entry_node_id = MEMORY_GRAPH.entry_node
-    if entry_node_id in queue and f"session_{EARLIEST_YEAR}" not in queue:
-        # Include it because of the explicit similar_to edge
-        queue.append(f"session_{EARLIEST_YEAR}")
+    if entry_node_id in queue:
+        for (edge_type, neighbor_id) in MEMORY_GRAPH.neighbors(entry_node_id):
+            if edge_type == "similar_to" and neighbor_id not in queue:
+                queue.append(neighbor_id)
+                nodes_to_visit.append(neighbor_id)
 
     while queue:
         node_id = queue.pop(0)
@@ -281,9 +292,9 @@ def run_query(query: str) -> Dict[str, Any]:
 if __name__ == "__main__":
     demo_queries = [
         "What was the user's trust level in 2015?",
-        "How has the negotiation strategy changed over the years?",
-        "What is the current best strategy to use with this persona?",
-        "Show me the concession pattern history",
+        # "How has the negotiation strategy changed over the years?",
+        # "What is the current best strategy to use with this persona?",
+        # "Show me the concession pattern history",
     ]
 
     for q in demo_queries:

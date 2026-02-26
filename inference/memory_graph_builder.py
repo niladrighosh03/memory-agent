@@ -20,6 +20,7 @@ Edge types  (following the architecture diagram):
 import json
 import os
 import glob
+import math
 from typing import Dict, Any, List, Tuple
 
 
@@ -33,6 +34,16 @@ def _latest_json_path(summarized_dir: str) -> str:
     if not files:
         raise FileNotFoundError(f"No numbered JSON files found in {summarized_dir}")
     return max(files, key=lambda p: int(os.path.splitext(os.path.basename(p))[0]))
+
+def _cosine_sim(v1: Dict[str, float], v2: Dict[str, float]) -> float:
+    """Calculate cosine similarity between two dictionaries of floats."""
+    keys = set(v1.keys()) | set(v2.keys())
+    dot  = sum(v1.get(k, 0) * v2.get(k, 0) for k in keys)
+    mag1 = math.sqrt(sum(v**2 for v in v1.values()))
+    mag2 = math.sqrt(sum(v**2 for v in v2.values()))
+    if mag1 == 0 or mag2 == 0:
+        return 0.0
+    return dot / (mag1 * mag2)
 
 
 # ---------------------------------------------------------------------------
@@ -245,11 +256,27 @@ def build_memory_graph(summarized_dir: str | None = None) -> MemoryGraph:
     for i in range(1, len(session_node_ids)):
         graph._add_edge(session_node_ids[i], "temporal_next", session_node_ids[i - 1])
 
-    # 4d. similar_to :  entry node (latest session)  →  session_2015  (ONLY this pair)
-    entry_nid    = year_to_last_session[latest_year]
-    earliest_nid = year_to_last_session[earliest_year]
-    if entry_nid != earliest_nid:
-        graph._add_edge(entry_nid, "similar_to", earliest_nid)
+    # 4d. similar_to :  entry node (latest session)  →  most similar past session
+    entry_nid  = session_node_ids[-1]
+    entry_node = graph.get_node(entry_nid)
+    entry_intent = entry_node.data.get("avg_intent_vector", {})
+
+    best_sim = -1.0
+    best_nid = None
+
+    # Compare against all prior sessions
+    for prior_nid in session_node_ids[:-1]:
+        prior_node   = graph.get_node(prior_nid)
+        prior_intent = prior_node.data.get("avg_intent_vector", {})
+        
+        sim = _cosine_sim(entry_intent, prior_intent)
+        if sim > best_sim:
+            best_sim = sim
+            best_nid = prior_nid
+
+    if best_nid:
+        graph._add_edge(entry_nid, "similar_to", best_nid)
+        print(f"[graph_builder] {entry_nid} --[similar_to]--> {best_nid} (sim: {best_sim:.3f})")
 
     # ------------------------------------------------------------------
     # 5. Entry point  — last session node of the latest year

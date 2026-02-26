@@ -79,9 +79,9 @@ you must output ONLY a JSON object with these EXACT keys:
 }
 
 Rules for node_type selection:
-  - Negotiation utterances (buying intent, price questions, offers, counter-offers):
-    → ["latent", "strategy", "concession"]  — need current state + best approach + price history
-  - Questions about trust, commitment, psychological state, readiness:
+  - IMPORTANT: If the user is speaking directly to the agent (e.g., "I have a budget constraint", "which one should I buy?", "give me a discount"), this is a LIVE NEGOTIATION.
+    → ["latent", "strategy", "concession", "session"]  — need current state + best approach + price history + recent session context to reply.
+  - Questions strictly about trust, commitment, psychological state, readiness:
     → ["latent"]
   - Questions about past prices, offers, acceptance/rejection history:
     → ["concession"]
@@ -183,8 +183,11 @@ def route_query(
     if "latent" in effective_types:
         nodes_to_traverse.append(f"latent_{entry_year}")
 
-    # Always include aggregated summaries
-    nodes_to_traverse.extend([f"strategy_agg_{entry_year}", f"concession_agg_{entry_year}"])
+    if "strategy" in effective_types:
+        nodes_to_traverse.append(f"strategy_agg_{entry_year}")
+        
+    if "concession" in effective_types:
+        nodes_to_traverse.append(f"concession_agg_{entry_year}")
 
     # Deduplicate preserving order
     seen: set = set()

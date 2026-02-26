@@ -201,11 +201,10 @@ def api_query():
         if n not in base_nodes and n in GRAPH.nodes:
             base_nodes.append(n)
 
-    # Include session_2015 via similar_to edge
-    for sfx in ["", "_a", "_b"]:
-        cand = f"session_{EARLIEST_YEAR}{sfx}"
-        if cand in GRAPH.nodes and cand not in base_nodes:
-            base_nodes.append(cand)
+    # Dynamically include the similar_to target
+    for (f, e, t) in GRAPH.edges:
+        if f == GRAPH.entry_node and e == "similar_to" and t not in base_nodes:
+            base_nodes.append(t)
 
     # Resolve suffixed variants
     resolved = set()
